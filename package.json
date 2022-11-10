@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4173",
+    "mock": "json-server ./mock/mockData.js -r ./mock/mockRouter.json -p 7777 --watch"
   },
   "dependencies": {
     "vue": "^3.2.38",
