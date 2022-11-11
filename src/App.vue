@@ -1,8 +1,6 @@
 <template>
-  <div>
   
     <UserView />
-  </div>
 </template>
 
 <script>

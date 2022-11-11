@@ -2,3 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    /* --van-cell-background-color: skyblue; */
+}
+
+html,body, #app {
+    height: 100%;
+}
