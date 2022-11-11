@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 底部导航文字颜色 */
+.van-tabbar-item__text {
+    color: #999;
+}
+
+/* 录播图指示器 */
+.van-swipe__indicators {
+    left: 100%;
+    margin-left: -24px;
+    transform: translateX(-100%);
+}
+
+:root {
+    --van-swipe-indicator-active-background-color: #fff;
+    --van-swipe-indicator-inactive-opacity: 0.6;
+}

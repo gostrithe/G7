@@ -1,11 +1,26 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-import './assets/main.css'
+import { ConfigProvider } from 'vant';
+import { Tabbar, TabbarItem, Icon, Button, Swipe, SwipeItem } from 'vant';
 
-const app = createApp(App)
+/* vant所有组件样式（不推荐） */
+import 'vant/lib/index.css';
 
-app.use(router)
+import './assets/main.css';
 
-app.mount('#app')
+const app = createApp(App);
+
+app.use(router);
+
+/* vant */
+app.use(ConfigProvider);
+app.use(Tabbar);
+app.use(TabbarItem);
+app.use(Icon);
+app.use(Button);
+app.use(Swipe);
+app.use(SwipeItem);
+
+app.mount('#app');
