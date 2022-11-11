@@ -1,0 +1,137 @@
+@import '@assets/variable.scss';
+
+.user-index {
+    background-color: $myGray1;
+    height: 100%;
+
+    .mine-header {
+        width: 100%;
+        height: (100vw/ 3.75);
+        background: url('@public/imgs/bg_me_top.png');
+        overflow: hidden;
+        display: flex;
+
+        .mine-header-avatar {
+            box-sizing: border-box;
+            width: (60vw/3.75);
+            height: (60vw/3.75);
+            float: left;
+            margin-top: (15vw/3.75);
+            margin-left: (15vw/3.75);
+            // margin-right:10px;
+            border: (2vw/3.75) solid #fff;
+            border-radius: 50%;
+            overflow: hidden;
+
+            // flex: 1;
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .mine-header-text {
+            color: $myWhite;
+            margin-top: (26vw/3.75);
+            margin-left: (10vw/3.75);
+            flex: 2;
+
+            .mine-header-text1 {
+                font-size: (18vw/3.75);
+                padding-bottom: (5vw/3.75);
+                font-weight: (20vw/3.75);
+            }
+
+            .mine-header-text2 {
+                font-size: (12vw/3.75);
+                ;
+            }
+        }
+
+        .mine-button {
+            flex: 1;
+            width: (30vw/3.75);
+            height: (25vw/3.75);
+            // position: absolute;
+            // top: 2rem;
+            // right: 0.4rem;
+            margin-top: (40vw/3.75);
+            margin-right: (10vw/3.75);
+            border-radius: (20vw/3.75);
+            color: $myOrange;
+            // background-color: $myWhite;
+            border: (1vw/3.75) solid $myWhite;
+            font-size: (13vw/3.75);
+            text-align: center;
+        }
+
+    }
+
+    .mine-account {
+        background-color: #fff;
+        border-radius: (10vw/3.75);
+        // position: absolute;
+        margin-top: (-10vw/3.75);
+        padding-bottom: (4vw/3.75);
+
+        .mine-account-info {
+            display: flex;
+            padding: (10vw/3.75) 0;
+
+
+            .num {
+                height: (20vw/3.75);
+                padding-top: (10vw/3.75);
+                color: gray
+            }
+
+            a {
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                color: black;
+
+                .van-icon {
+                    display: block;
+                    text-align: center;
+                    color: $myOrange;
+                    font-size: (30vw/3.75);
+
+
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                    font-size: (10vw/3.75);
+                    color: gray
+                }
+            }
+
+        }
+
+        .mine-account-image {
+            display: block;
+            width: (350vw/3.75);
+            height: (60vw/3.75);
+            margin: (10vw/3.75) auto;
+            background: url('@public/imgs/pic_me_vipimg.png') no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    .van-cell-group {
+        background-color: $myGray1;
+        margin-top: (7vw/3.75);
+
+        .van-cell {
+            margin-bottom: (7vw/3.75);
+            height: (50vw/3.75);
+            font-size: (14vw/3.75);
+            line-height: (30vw/3.75);
+
+        }
+    }
+}
