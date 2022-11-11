@@ -38,9 +38,15 @@ const router = createRouter({
     },
 
     {
+      path: '/search',
+      name: 'search',
+      component: () => import('../views/SearchView.vue')
+    },
+
+    {
       path: '/:id(\\d+)',
       name: 'novel',
-      component: import('../views/NovelView.vue')
+      component: () => import('../views/NovelView.vue')
     },
 
     {

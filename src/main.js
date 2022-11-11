@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from './router';
 
 import { ConfigProvider } from 'vant';
-import { Tabbar, TabbarItem, Icon, Button, Swipe, SwipeItem } from 'vant';
+import { Tabbar, TabbarItem, Icon, Button, Swipe, SwipeItem, Grid, GridItem, Image, Cell } from 'vant';
 
 /* vant所有组件样式（不推荐） */
 import 'vant/lib/index.css';
@@ -22,5 +22,9 @@ app.use(Icon);
 app.use(Button);
 app.use(Swipe);
 app.use(SwipeItem);
+app.use(Grid);
+app.use(GridItem);
+app.use(Image);
+app.use(Cell);
 
 app.mount('#app');
