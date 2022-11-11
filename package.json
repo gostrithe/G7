@@ -8,11 +8,13 @@
     "mock": "json-server ./mock/mockData.js -r ./mock/mockRouter.json -p 7777 --watch"
   },
   "dependencies": {
+    "vant": "^3.6.5",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
+    "sass": "^1.56.1",
     "vite": "^3.0.9"
   }
 }

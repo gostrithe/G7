@@ -1,12 +1,16 @@
 <template>
   <div>
-    <h1>G7</h1>
+  
+    <UserView />
   </div>
 </template>
 
 <script>
+import UserView from './views/UserView.vue';
   export default {
-    
+    components: {
+      UserView
+    }
   }
 </script>
 
