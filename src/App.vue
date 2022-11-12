@@ -1,9 +1,4 @@
 <template>
-  <!-- <NotFound /> -->
-  <!-- <BookshelfView /> -->
-  <!-- <CollectionView/> -->
-
-  <UserView />
 </template>
 
 <script>
