@@ -5,10 +5,14 @@ import router from './router';
 import { Icon ,ShareSheet, Cell, CellGroup} from 'vant';
 import { Tab, Tabs } from 'vant';
 
+
 import 'vant/lib/index.css';
 import './assets/main.css';
 
 const app = createApp(App)
+
+
+
 
 
 app.use(Icon);

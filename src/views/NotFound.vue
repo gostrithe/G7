@@ -22,7 +22,7 @@ export default {
     width: 70vw;
     height: 56vw;
     margin: 18vw auto;
-    background: url('../../public/imgs/bg_me_top_404.png');
+    background: url('/imgs/bg_me_top_404.png');
     background-size: cover;
   }
 

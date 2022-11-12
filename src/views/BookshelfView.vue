@@ -1,15 +1,16 @@
 <template>
-    <div>
-
-    </div>
+   <BookShelfHeader/>
 </template>
 
 <script>
-    export default {
-        
+import BookShelfHeader from '../component/BookShelfHeader.vue'
+export default {
+    components:{
+        BookShelfHeader,
     }
+}
 </script>
 
 <style lang="scss" scoped>
 
-</style>git
+</style>
