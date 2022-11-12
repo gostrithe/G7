@@ -4,6 +4,9 @@
     --van-grid-item-content-padding: 12px 18px 14px;
     --van-cell-icon-size: 20px;
     --van-cell-group-title-font-size: 16px;
+    --van-grid-item-content-padding: 0;
+    --van-cell-horizontal-padding: 0;
+    --van-card-font-size: 16px;
 }
 
 img {
@@ -36,6 +39,7 @@ img {
     padding: 0;
 }
 
+.van-cell__title span,
 .van-cell__label {
     /* overflow: hidden;
     text-overflow: ellipsis;
@@ -44,4 +48,48 @@ img {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
+    margin-top: 0;
+}
+
+/* .underBanner .van-grid,
+.kzjp .van-grid, */
+.van-grid {
+    justify-content: space-between;
+}
+
+
+.kzjp .van-cell {
+    line-height: 1.5;
+}
+
+.kzjp .van-grid-item {
+    padding-bottom: 10px;
+}
+
+.content .van-cell {
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.sszk .van-card {
+    height: 130px;
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sszk .van-card .van-card__thumb {
+    height: 100%;
+    margin-right: 14px;
+}
+.sszk .van-card__thumb img {
+    border-radius: 0;
+}
+
+.sszk .van-cell {
+    padding-top: 0;
+}
+
+.novelList .van-grid-item {
+    margin-bottom: 10px;
 }
