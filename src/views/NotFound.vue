@@ -2,15 +2,18 @@
   <div class="err-container">
     <div class="error-bg"></div>
 
-    <button class="error-btn">刷新试试</button>
-    <a class="back" href="#">返回漫客栈首页</a>
+    <button class="error-btn" @click="$route.reload()">刷新试试</button>
+    <a class="back" href="/">返回漫客栈首页</a>
   </div>
 </template>
 
 <script>
 export default {
+  reload(){
 
+  }
 }
+
 </script>
 
 <style lang="scss" scoped>
