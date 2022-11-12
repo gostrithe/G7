@@ -1,14 +1,15 @@
 <template>
     <div class="header-bookshelf">
-        <router-link class="link-item" to="/asfa" active-class="active">
+        <router-link class="link-item" to="/user/history" active-class="active">
             <span>历史</span>
             <span class="underline"></span>
         </router-link>
 
-        <router-link class="link-item" to="/adfk" active-class="active">
+        <router-link class="link-item" to="/user/collection" active-class="active">
             <span>收藏</span>
             <span class="underline"></span>
         </router-link>
+
 
 
         <div class="history-settle"></div>

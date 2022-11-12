@@ -43,3 +43,10 @@ export async function doDelete(url, config) {
         console.log('doDelete: error=', error);
     }
 }
+
+export default {
+    doGet,
+    doPost,
+    doPut,
+    doDelete
+}

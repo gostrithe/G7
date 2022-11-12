@@ -1,0 +1,7 @@
+{
+    "/api/novel/detail": "/novelDetailData",
+    "/api/novel/list": "/novelListData",
+    "/api/novel/content": "/novelContentData",
+    "/api/home/baner": "/homeBannerData",
+    "/api/home": "/myHomeData"
+}

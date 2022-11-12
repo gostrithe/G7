@@ -1,18 +1,18 @@
 <template>
-    <BookShelfHeader />
-    
-
-    <router-view></router-view>
-
+    <div>
+        <div class="no-login-history">
+            <div>
+                <span>登录同步阅读历史，追更很简单~</span>
+                <button class="btn_dl">登录</button>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-import BookShelfHeader from '../component/user/BookShelfHeader.vue'
 export default {
-    components: {
-        BookShelfHeader,
-    }
-}
+
+};
 </script>
 
 <style lang="scss" scoped>
@@ -30,8 +30,8 @@ export default {
     background-repeat: no-repeat;
     background-size: 9vw;
     background-position: 4vw 1vw;
-  
-  
+
+
 
     .btn_dl {
         float: right;

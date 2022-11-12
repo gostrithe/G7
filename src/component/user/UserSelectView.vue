@@ -15,11 +15,13 @@
         </a>
     </div> -->
 
-    <van-cell-group>
-        <van-cell title="我的购买" value=">" />
-        <van-cell title="个性装扮" value="前往APP，获取个性头像框" />
-        <van-cell title="意见反馈" value=">" />
-    </van-cell-group>
+    <div class="userBox">
+        <van-cell-group>
+            <van-cell title="我的购买" value=">" />
+            <van-cell title="个性装扮" value="前往APP，获取个性头像框" />
+            <van-cell title="意见反馈" value=">" />
+        </van-cell-group>
+    </div>
 
 
 </template>
@@ -27,7 +29,7 @@
 <script>
 export default {
 
-}
+};
 </script>
 
 <style lang="scss" scoped>

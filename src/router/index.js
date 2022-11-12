@@ -1,8 +1,21 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
+
+import Home from '../views/Home.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/user/bookshelf',
+      redirect: '/user/history'
+    },
+
+    {
+      path: '/',
+      name: 'home',
+      component: Home
+    },
+
     {
       path: '/category',
       name: 'category',
@@ -13,26 +26,35 @@ const router = createRouter({
       path: '/user',
       name: 'user',
       component: () => import('../views/UserView.vue'),
+    },
 
+    {
+      path: '/bookshelf',
+      component: () => import('../views/BookshelfView.vue'),
       children: [
         {
-          path: 'history',
-          name: 'userHistory',
-          component: () => import('../views/BookshelfView.vue')
-        },
-
-        {
-          path: 'collection',
+          path: '/user/collection',
           name: 'userCollection',
           component: () => import('../views/CollectionView.vue')
+        },
+        {
+          path: '/user/history',
+          name: 'userHistory',
+          component: () => import('../components/user/history.vue')
         }
       ]
     },
 
     {
+      path: '/search',
+      name: 'search',
+      component: () => import('../views/SearchView.vue')
+    },
+
+    {
       path: '/:id(\\d+)',
       name: 'novel',
-      component: import('../views/NovelView.vue')
+      component: () => import('../views/NovelView.vue')
     },
 
     {
@@ -41,6 +63,6 @@ const router = createRouter({
       component: () => import('../views/NotFound.vue')
     }
   ]
-})
+});
 
-export default router
+export default router;

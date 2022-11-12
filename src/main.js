@@ -2,27 +2,48 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 
-import { Icon ,ShareSheet, Cell, CellGroup} from 'vant';
-import { Tab, Tabs } from 'vant';
+import { ConfigProvider } from 'vant';
+import { Tabbar, TabbarItem, Icon, Button, Swipe, SwipeItem, Grid, GridItem, Image, Cell, Divider, Tag, Card } from 'vant';
+import { Tab, Tabs, ShareSheet, CellGroup } from 'vant';
 
-
+/* vant所有组件样式（不推荐） */
 import 'vant/lib/index.css';
+
 import './assets/main.css';
 
-const app = createApp(App)
+const app = createApp(App);
 
 
 
-
-
-app.use(Icon);
 app.use(router);
-app.use(ShareSheet);
+
+/* vant */
+app.use(ConfigProvider);
+app.use(Tabbar);
+app.use(TabbarItem);
+app.use(Icon);
+app.use(Button);
+app.use(Swipe);
+app.use(SwipeItem);
+app.use(Grid);
+app.use(GridItem);
+app.use(Image);
 app.use(Cell);
+app.use(Divider);
+app.use(Tag);
+app.use(Card);
+
+
+
+
+
+
+app.use(ShareSheet);
+
 app.use(CellGroup);
 app.use(Tab);
 app.use(Tabs);
 
 
 
-app.mount('#app')
+app.mount('#app');
