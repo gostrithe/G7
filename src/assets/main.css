@@ -10,3 +10,8 @@
 html,body, #app {
     height: 100%;
 }
+
+
+.header-bookshelf .van-tab--active .van-tab__text {
+    color: #FF620E;
+}

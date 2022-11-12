@@ -1,0 +1,24 @@
+<template>
+    <div class="mine-header">
+        <div class="mine-header-avatar">
+            <a href="#">
+                <img src='/imgs/pic_user_wdl.png' alt="默认头像">
+            </a>
+        </div>
+        <div class="mine-header-text">
+            <p class="mine-header-text1">游客</p>
+            <p class="mine-header-text2">VIP到期时间:{{ time }}</p>
+        </div>
+        <button class="mine-button">登录/注册</button>
+    </div>
+
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="scss" scoped>
+</style>

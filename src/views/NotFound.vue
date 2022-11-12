@@ -2,16 +2,14 @@
   <div class="err-container">
     <div class="error-bg"></div>
 
-    <button class="error-btn" @click="$route.reload()">刷新试试</button>
+    <button class="error-btn" @click="$router.go(-1)">刷新试试</button>
     <a class="back" href="/">返回漫客栈首页</a>
   </div>
 </template>
 
 <script>
 export default {
-  reload(){
 
-  }
 }
 
 </script>
@@ -25,7 +23,6 @@ export default {
     background: url('/imgs/bg_me_top_404.png');
     background-size: cover;
   }
-
   .error-btn {
     width: 80vw;
     height: 14vw;
