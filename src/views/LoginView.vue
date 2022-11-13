@@ -2,7 +2,10 @@
     <div class="login-header-wrapper">
         <div class="login-header">
             <a class="header-back" href="javascript:history.back()"></a>
-            <a class="header-forgot">忘记密码</a>
+           
+            <router-link class="header-forgot" to="/forgot" >
+                忘记密码
+            </router-link>
         </div>
         <div class="login-header-logo"></div>
     </div>
@@ -25,7 +28,8 @@
     </van-form>
 
     <p class="fast-register">
-        <span class="text">手机号快速注册</span>
+        <router-link  class="text" to="/register">手机号快速注册</router-link>
+
         <van-icon name="arrow" />
     </p>
     <div class="login-other-fn clearfix">
