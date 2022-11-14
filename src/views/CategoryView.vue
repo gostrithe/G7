@@ -1,15 +1,34 @@
 <template>
-    <div>
-
-    </div>
+    <van-tabs v-model:active="active" line-width="10px" line-height="4px" color="#FF7830" title-active-color="#FF7830"
+        shrink>
+        <van-tab title="题材">
+            <CategoryView/>
+        </van-tab>
+        <van-tab title="进度">进度</van-tab>
+        <van-tab title="受众">受众</van-tab>
+        <van-tab title="属性">属性</van-tab>
+    </van-tabs>
+    <router-link class="catagory-search" to="#"></router-link>
 </template>
 
 <script>
-    export default {
-        
+import CategoryView from '../component/user/CategoryThemePage.vue'
+export default {
+    components:{
+        CategoryView,
     }
+}
 </script>
 
 <style lang="scss" scoped>
-
+.catagory-search {
+    position: absolute;
+    right: 4vw;
+    top: 2vw;
+    width: 7vw;
+    height: 7vw;
+    background-image: url('/imgs/ic_nav_search_b@2x.png');
+    background-size: cover;
+    background-color: white;
+}
 </style>
