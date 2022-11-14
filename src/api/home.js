@@ -21,8 +21,14 @@ export async function getColletionCount(id) {
     return collection_count;
 }
 
+export async function getNovelList(id) {
+    let { data } = await doGet(`https://comic.mkzcdn.com/chapter/v1/?comic_id=${id}`);
+    return data;
+}
+
 export default {
     getBannerUrl,
     getNovelDetail,
-    getColletionCount
+    getColletionCount,
+    getNovelList
 };
