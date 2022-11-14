@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from './router';
 
 import { ConfigProvider } from 'vant';
-import { Tabbar, TabbarItem, Icon, Button, Swipe, SwipeItem, Grid, GridItem, Image, Cell, Divider, Tag, Card } from 'vant';
+import { Tabbar, TabbarItem, Icon, Button, Swipe, SwipeItem, Grid, GridItem, Image, Cell, Divider, Tag, Card, NavBar, ActionBar, ActionBarIcon, ActionBarButton  } from 'vant';
 import { Tab, Tabs, ShareSheet, CellGroup } from 'vant';
 
 /* vant所有组件样式（不推荐） */
@@ -32,8 +32,10 @@ app.use(Cell);
 app.use(Divider);
 app.use(Tag);
 app.use(Card);
-
-
+app.use(NavBar);
+app.use(ActionBar);
+app.use(ActionBarIcon);
+app.use(ActionBarButton);
 
 
 

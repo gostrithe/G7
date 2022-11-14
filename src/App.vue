@@ -1,9 +1,12 @@
 <template>
   <div>
+    <Suspense>
+      <template #default>
+        <router-view></router-view>
+      </template>
+    </Suspense>
 
-    <router-view></router-view>
 
-    
     <van-tabbar v-if="!$route.params.id" v-model="active" active-color="#ff7830" inactive-color="#999">
       <van-tabbar-item name="home" to="/" icon="wap-home-o">首页</van-tabbar-item>
       <van-tabbar-item name="category" to="/category/" icon="bookmark-o">分类</van-tabbar-item>
@@ -18,7 +21,7 @@ import { ref } from 'vue';
 
 export default {
   setup() {
-    const active = ref('home');
+    const active = ref("home");
     return { active };
   },
 };

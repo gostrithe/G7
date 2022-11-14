@@ -1,0 +1,559 @@
+{
+    "code": "200",
+    "message": "漫画抢先看列表",
+    "data": [
+        {
+            "comic_id": "208707",
+            "title": "网游之近战法师",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190704\/5d1d741e7b2eb-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第458话 陷阱高手"
+        },
+        {
+            "comic_id": "213295",
+            "title": "逆天邪神",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200717\/5f111b00973b7-750x999.jpg",
+            "level": "4",
+            "chapter_title": "第570话 神话时代的功法"
+        },
+        {
+            "comic_id": "214233",
+            "title": "逆天剑神",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200810\/5f3119b634c96-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第604话 稚子无辜，无人生还"
+        },
+        {
+            "comic_id": "214331",
+            "title": "绝世战魂",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190420\/5cbaec4fd43f3-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第523话 前有狼后有虎"
+        },
+        {
+            "comic_id": "214717",
+            "title": "神武天尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200927\/5f7004e758cb6-750x999.png",
+            "level": "3",
+            "chapter_title": "第543话 集合势力"
+        },
+        {
+            "comic_id": "215059",
+            "title": "盖世帝尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210607\/60be053bd9418-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第311话 亲自出马！"
+        },
+        {
+            "comic_id": "215646",
+            "title": "逆天战神",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200722\/5f1805b79812c-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第363话 黑龙"
+        },
+        {
+            "comic_id": "215021",
+            "title": "一等家丁",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210716\/60f12a4f4246e-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第355话 俊杰前辈"
+        },
+        {
+            "comic_id": "215795",
+            "title": "一剑独尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200918\/5f646a2522cf0-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第278话 阳谋"
+        },
+        {
+            "comic_id": "214235",
+            "title": "战鼎",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200628\/5ef84117a2217-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第345话 木彩灵的警告"
+        },
+        {
+            "comic_id": "214636",
+            "title": "尊上",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190705\/5d1ef73e1e347-700x933.jpg",
+            "level": "3",
+            "chapter_title": "第430话 恨之入骨"
+        },
+        {
+            "comic_id": "214791",
+            "title": "校园护花高手",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190821\/5d5caae127ecd-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第299话 异世界"
+        },
+        {
+            "comic_id": "215003",
+            "title": "仙武帝尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200928\/5f71977c0c611-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第399话 九转混元丹！"
+        },
+        {
+            "comic_id": "215228",
+            "title": "道印",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200118\/5e22cd385141f-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第212话 别挡着我！"
+        },
+        {
+            "comic_id": "215720",
+            "title": "无敌剑域",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200817\/5f39e4d61afe0-747x996.jpg",
+            "level": "1",
+            "chapter_title": "第170话 打劫？"
+        },
+        {
+            "comic_id": "215651",
+            "title": "镇国主宰",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200831\/5f4ca6063e1d3-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第236话 破绽"
+        },
+        {
+            "comic_id": "214328",
+            "title": "极品败家子",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190419\/5cb98dfb8fced-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第383话 真正的绝招"
+        },
+        {
+            "comic_id": "214542",
+            "title": "逆转仙途",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210729\/610273b263cd9-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第274话 最终话"
+        },
+        {
+            "comic_id": "214647",
+            "title": "封·禁神录",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200714\/5f0d79ae79a91-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第307话 名字"
+        },
+        {
+            "comic_id": "214673",
+            "title": "踏碎仙河",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210910\/613abd4bda377-734x978.jpg",
+            "level": "3",
+            "chapter_title": "第298话 共进退"
+        },
+        {
+            "comic_id": "214691",
+            "title": "剑舞",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190712\/5d27e309c7b9d-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第257话 对立之战"
+        },
+        {
+            "comic_id": "215053",
+            "title": "修罗剑尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20191203\/5de5d18d23adb-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第361话 大获全胜"
+        },
+        {
+            "comic_id": "215377",
+            "title": "伏天圣主",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210308\/60458f852e05f-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第2季211话 天狐！"
+        },
+        {
+            "comic_id": "208643",
+            "title": "穿越西元3000后",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20181106\/5be153cb33e29-600x800.jpg",
+            "level": "1",
+            "chapter_title": "番外3 上将傲娇了"
+        },
+        {
+            "comic_id": "208645",
+            "title": "寻找前世之旅",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210203\/601a09656b366-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第2季第203话 永别了，莱希特2"
+        },
+        {
+            "comic_id": "208670",
+            "title": "风起苍岚",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200110\/5e182f3a506f3-743x991.jpg",
+            "level": "3",
+            "chapter_title": "第2季179话 太上长老3"
+        },
+        {
+            "comic_id": "208644",
+            "title": "凤逆天下",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210707\/60e567b94a6fb-750x999.png",
+            "level": "3",
+            "chapter_title": "第528话 佣兵之王1（1）"
+        },
+        {
+            "comic_id": "213058",
+            "title": "狼少女养成记",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200827\/5f4782ac61de7-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第344话 好生俊俏的车夫"
+        },
+        {
+            "comic_id": "213370",
+            "title": "哦，我的宠妃大人",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200907\/5f55fced4c5d7-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第391话 小心火烛"
+        },
+        {
+            "comic_id": "213835",
+            "title": "系统逼我做皇后",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20181224\/5c20583988f30-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第283话 这仇一定会报"
+        },
+        {
+            "comic_id": "214156",
+            "title": "上国赋之千堆雪",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20191122\/5dd7988f4d536-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第371话 摄政王1"
+        },
+        {
+            "comic_id": "214615",
+            "title": "毒医嫡女",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190619\/5d09d9d57b455-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第355话 坐等狗咬狗"
+        },
+        {
+            "comic_id": "214705",
+            "title": "某天成为王的女儿",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190715\/5d2c2380f3b25-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第535话 怎么会是男孩？！"
+        },
+        {
+            "comic_id": "215162",
+            "title": "凤凰错:专宠弃妃",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210813\/6115e800111ba-750x999.png",
+            "level": "3",
+            "chapter_title": "第266话 九品神气丹"
+        },
+        {
+            "comic_id": "215451",
+            "title": "王的第一宠后",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210810\/61124af973a01-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第177话 河马佩奇"
+        },
+        {
+            "comic_id": "215596",
+            "title": "名剑冢",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210621\/60d056b0ab36a-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第164话 抉择"
+        },
+        {
+            "comic_id": "215623",
+            "title": "我家陛下总想祸国",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20201106\/5fa4eea8a6234-750x999.jpg",
+            "level": "3",
+            "chapter_title": "最终话 是走是留？"
+        },
+        {
+            "comic_id": "215808",
+            "title": "皇家媳妇的生存手册",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200923\/5f6affbd414d4-750x999.jpg",
+            "level": "1",
+            "chapter_title": "第126话 你的眼睛？"
+        },
+        {
+            "comic_id": "215976",
+            "title": "巴比伦王妃",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210120\/6007dd230ec47-750x999.jpg",
+            "level": "3",
+            "chapter_title": "最终话 最好的结局"
+        },
+        {
+            "comic_id": "215980",
+            "title": "穿越到春秋男校当团宠",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210609\/60c036dc86b8a-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第143话 新的旅途？"
+        },
+        {
+            "comic_id": "212495",
+            "title": "地府我开的",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20220114\/61e0cd257f39e-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第780话 东方的乡巴佬想要阻挠我的计划！"
+        },
+        {
+            "comic_id": "213398",
+            "title": "人质恋人",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200710\/5f07e2728cc7f-750x999.jpg",
+            "level": "3",
+            "chapter_title": "最终话 最终局面"
+        },
+        {
+            "comic_id": "213076",
+            "title": "渣男总裁别想逃",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20201217\/5fdb0dc4cc828-750x999.jpg",
+            "level": "3",
+            "chapter_title": "最终话 终于迎来幸福"
+        },
+        {
+            "comic_id": "213112",
+            "title": "因爱宠你",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190912\/5d7a1b1b47aa8-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第495话"
+        },
+        {
+            "comic_id": "214351",
+            "title": "我是大仙尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200820\/5f3e5a80cbe77-750x999.png",
+            "level": "3",
+            "chapter_title": "第508话 强硬聘请，我没兴趣"
+        },
+        {
+            "comic_id": "214730",
+            "title": "今天开始当首富",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190725\/5d397581be97d-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第319话 让西方再次伟大！"
+        },
+        {
+            "comic_id": "214773",
+            "title": "异能狂师",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190809\/5d4d1dbc7be1a-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第264话 失踪的冷星月"
+        },
+        {
+            "comic_id": "214843",
+            "title": "最强桃花运",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20201125\/5fbdb9c4830d9-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第295话 一吻情深"
+        },
+        {
+            "comic_id": "214971",
+            "title": "医等狂兵",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210720\/60f677345fc09-750x1000.jpg",
+            "level": "2",
+            "chapter_title": "第242话 通背拳炉"
+        },
+        {
+            "comic_id": "214990",
+            "title": "都市之逆天仙尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20191101\/5dbb9cd6890f6-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第335话 老怪物"
+        },
+        {
+            "comic_id": "215046",
+            "title": "仙尊奶爸当赘婿",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20191201\/5de33df4761b2-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第351话 谣言四起，魔族傀儡"
+        },
+        {
+            "comic_id": "215081",
+            "title": "绝品医圣",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210510\/609901f9aa014-750x1000.JPG",
+            "level": "2",
+            "chapter_title": "第288话 部分真相"
+        },
+        {
+            "comic_id": "215108",
+            "title": "神级渔夫",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210113\/5ffe561066582-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第299话 纠正风气好嫂子"
+        },
+        {
+            "comic_id": "215141",
+            "title": "冰山总裁强宠婚",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20211027\/6178c6efa5d49-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第250话 现场求婚"
+        },
+        {
+            "comic_id": "215158",
+            "title": "都市邪王",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200820\/5f3deb8c9766e-750x999.png",
+            "level": "2",
+            "chapter_title": "第266话 次日中午"
+        },
+        {
+            "comic_id": "215350",
+            "title": "总裁爹地追上门",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210112\/5ffd3684a07c1-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第217话 惊喜"
+        },
+        {
+            "comic_id": "215801",
+            "title": "无敌学霸系统",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210517\/60a1d2680f127-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第267话 有间谍"
+        },
+        {
+            "comic_id": "215570",
+            "title": "最强仙界朋友圈",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210308\/60458f522600b-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第185话 仙界最强武器"
+        },
+        {
+            "comic_id": "215580",
+            "title": "妈咪来袭，天才萌宝酷爹地",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200618\/5eead29a2d7f1-750x999.jpg",
+            "level": "1",
+            "chapter_title": "第127话 你留下！"
+        },
+        {
+            "comic_id": "215599",
+            "title": "她来了，请趴下",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210624\/60d3da10819ac-750x999.png",
+            "level": "3",
+            "chapter_title": "第291话 我来送你去死1"
+        },
+        {
+            "comic_id": "215628",
+            "title": "世界第一巨星",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200801\/5f251b96d3862-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第56话3 放弃一切吗？"
+        },
+        {
+            "comic_id": "215635",
+            "title": "我有一座冒险屋",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200729\/5f2148237943f-750x1000.JPG",
+            "level": "3",
+            "chapter_title": "第209话 关门打狗"
+        },
+        {
+            "comic_id": "209533",
+            "title": "我被总裁黑上了！",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210526\/60ae144e2817c-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第485话"
+        },
+        {
+            "comic_id": "213941",
+            "title": "坏心王爷别惹我",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20191011\/5da03cdd4c139-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第294话 送我的全都还给你！"
+        },
+        {
+            "comic_id": "214712",
+            "title": "妈咪快跑：爹地追来了",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190717\/5d2eb40d48465-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第395话 今天谁也别想走！"
+        },
+        {
+            "comic_id": "214716",
+            "title": "万古神王",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190729\/5d3ef42db9c05-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第396话 正式加入灵调局"
+        },
+        {
+            "comic_id": "215140",
+            "title": "万界仙王",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20191223\/5e008a36656d8-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第218话 救欢欢的唯一办法"
+        },
+        {
+            "comic_id": "215398",
+            "title": "假戏真做",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20200401\/5e8431ad40573-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第180话 不真实的幸福感"
+        },
+        {
+            "comic_id": "213110",
+            "title": "解离妖圣",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190617\/5d075087451ca-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第396话 外来者"
+        },
+        {
+            "comic_id": "213827",
+            "title": "医妃权倾天下",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20190219\/5c6bcb3816f7d-750x999.jpg",
+            "level": "1",
+            "chapter_title": "第170话 北域莫清风"
+        },
+        {
+            "comic_id": "215608",
+            "title": "谐帝为尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210729\/610273f697b1b-750x1000.jpg",
+            "level": "3",
+            "chapter_title": "第212话 给周周开直播？"
+        },
+        {
+            "comic_id": "215940",
+            "title": "逆天毒妃",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20201224\/5fe449880896d-600x800.jpg",
+            "level": "3",
+            "chapter_title": "最终话 大结局"
+        },
+        {
+            "comic_id": "215880",
+            "title": "极品狂婿",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20211102\/6180dcfde3433-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第196话 玄真魔女？！"
+        },
+        {
+            "comic_id": "214368",
+            "title": "医武至尊",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210604\/60b9fa4bb5250-750x999.jpg",
+            "level": "3",
+            "chapter_title": "第371话 道歉！"
+        },
+        {
+            "comic_id": "215846",
+            "title": "我的末世大小姐",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20201027\/5f97d1a94640f-600x800.jpg",
+            "level": "3",
+            "chapter_title": "最终话 请问，我们认识吗？"
+        },
+        {
+            "comic_id": "215994",
+            "title": "哥才不是大反派",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210129\/6013a0356b984-750x999.png",
+            "level": "3",
+            "chapter_title": "第102话 诱饵"
+        },
+        {
+            "comic_id": "216058",
+            "title": "重生后靠脸混娱乐圈",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210325\/605c406c8d1d6-750x999.jpg",
+            "level": "3",
+            "chapter_title": "最终话"
+        },
+        {
+            "comic_id": "215986",
+            "title": "女神带我当学霸",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20210514\/609e3c752f955-600x800.jpg",
+            "level": "3",
+            "chapter_title": "最终话 一切都是谜"
+        },
+        {
+            "comic_id": "208697",
+            "title": "三眼哮天录",
+            "cover": "http:\/\/oss.mkzcdn.com\/comic\/cover\/20181106\/5be1553bad82f-600x800.jpg",
+            "level": "3",
+            "chapter_title": "第2季150话 生而为神1"
+        }
+    ]
+}
