@@ -7,19 +7,27 @@
         <van-tab title="进度">
             <CategoryProgressPage />
         </van-tab>
-        <van-tab title="受众">受众</van-tab>
-        <van-tab title="属性">属性</van-tab>
+        <van-tab title="受众">
+            <CategoryMassesPage />
+        </van-tab>
+        <van-tab title="属性">
+            <CategoryAttributePage  />
+        </van-tab>
     </van-tabs>
-    <router-link class="catagory-search" to="#"></router-link>
+    <router-link class="catagory-search" to="/search"></router-link>
 </template>
 
 <script>
 import CategoryThemePage from '../component/user/CategoryThemePage.vue'
 import CategoryProgressPage from '../component/user/CategoryProgressPage.vue'
+import CategoryMassesPage from '../component/user/CategoryMassesPage.vue'
+import CategoryAttributePage from '../component/user/CategoryAttributePage.vue'
 export default {
     components: {
         CategoryThemePage,
         CategoryProgressPage,
+        CategoryMassesPage,
+        CategoryAttributePage
     }
 }
 </script>
