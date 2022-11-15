@@ -1,8 +1,8 @@
 <template>
     <ul class="clearfix">
         <li :id="index"
-            :style="{ backgroundImage: `url(https://static.mkzcdn.com/mobile/img/catalogs/ticai/pic_class_img${index}@2x.png)`}"
-            class="catalog-item" v-for="index  in 25">
+            :style="{ backgroundImage: `url(https://static.mkzcdn.com/mobile/img/catalogs/jindu/pic_class_img${index}@2x.png)`}"
+            class="catalog-item" v-for="index  in imgArrIndex">
         </li>
     </ul>
 
@@ -12,7 +12,8 @@
 export default {
     data() {
         return {
-            index: 1,
+            index: 26,
+            imgArrIndex: [26, 27]
             // backgroundimage:
         }
     },

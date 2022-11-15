@@ -2,9 +2,11 @@
     <van-tabs v-model:active="active" line-width="10px" line-height="4px" color="#FF7830" title-active-color="#FF7830"
         shrink>
         <van-tab title="题材">
-            <CategoryView/>
+            <CategoryThemePage />
         </van-tab>
-        <van-tab title="进度">进度</van-tab>
+        <van-tab title="进度">
+            <CategoryProgressPage />
+        </van-tab>
         <van-tab title="受众">受众</van-tab>
         <van-tab title="属性">属性</van-tab>
     </van-tabs>
@@ -12,10 +14,12 @@
 </template>
 
 <script>
-import CategoryView from '../component/user/CategoryThemePage.vue'
+import CategoryThemePage from '../component/user/CategoryThemePage.vue'
+import CategoryProgressPage from '../component/user/CategoryProgressPage.vue'
 export default {
-    components:{
-        CategoryView,
+    components: {
+        CategoryThemePage,
+        CategoryProgressPage,
     }
 }
 </script>
