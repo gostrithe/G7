@@ -3,5 +3,6 @@
     "/api/novel/list": "/novelListData",
     "/api/novel/content": "/novelContentData",
     "/api/home/baner": "/homeBannerData",
-    "/api/home": "/myHomeData"
+    "/api/home": "/myHomeData",
+    "/api/category/theme1": "/theme_1data"
 }

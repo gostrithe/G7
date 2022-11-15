@@ -2,7 +2,8 @@
     <div class="no-login-collection">
         <div class="no-login-image"></div>
         <p class="no-login-text">登录同步收藏信息，更新有提醒哦~</p>
-        <button class="no-login-button">立即登录</button>
+        <!-- <button class="no-login-button">立即登录</button> -->
+        <router-link class="no-login-button" to="/login">立即登录</router-link>
     </div>
 </template>
 

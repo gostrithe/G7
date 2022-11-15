@@ -9,7 +9,11 @@
             <p class="mine-header-text1">游客</p>
             <p class="mine-header-text2">VIP到期时间:{{ `${new Date().toLocaleDateString()}` }}</p>
         </div>
-        <button class="mine-button">登录/注册</button>
+
+        <router-link class="mine-button" to="/login">
+           登录/注册
+        </router-link>
+
     </div>
 
 </template>
@@ -21,4 +25,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mine-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 </style>

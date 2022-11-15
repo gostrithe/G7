@@ -3,7 +3,9 @@
         <div class="no-login-history">
             <div>
                 <span>登录同步阅读历史，追更很简单~</span>
-                <button class="btn_dl">登录</button>
+                <router-link class="btn_dl" to="/login" >
+                    <span>登录</span>
+                </router-link>
             </div>
         </div>
     </div>
