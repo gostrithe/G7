@@ -2,7 +2,7 @@
     <div class="navBar">
         <van-nav-bar :title="title" left-arrow @click-left="onClickLeft" :border="false">
             <template #right>
-                <van-icon name="/imgs/ic_nav_share.png" size="21" />
+                <van-icon @click="showShadow" name="/imgs/ic_nav_share.png" size="21" />
                 <van-icon @click="goHome" name="/imgs/ic_nav_gohome.png" size="21" />
             </template>
         </van-nav-bar>
@@ -54,13 +54,21 @@
                     <div>
                         <div class="listTop">
                             <h5>连载</h5>
-                            <span class="van-ellipsis">{{ new Date((start_time * 1000)).toLocaleDateString().split('/').join('.')
+                            <span class="van-ellipsis">{{ new Date((start_time *
+                                    1000)).toLocaleDateString().split('/').join('.')
                             }}更新至{{ updateInfo }}</span>
                             <div class="sortBtn">
                                 <div class="iconSort"></div>
                                 正序
                             </div>
                         </div>
+                        <van-list v-model:loading="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
+                            <div class="listItem" v-for="novel in list" :key="novel.chapter_id">
+                                <van-image radius="4" width="120" height="68" :src="`${novel.cover}!banner-600-x`" />
+                                <van-cell :title="novel.title"
+                                    :label="new Date(novel.start_time * 1000).toLocaleDateString().split('/').join('-')" />
+                            </div>
+                        </van-list>
                     </div>
                 </template>
             </van-tab>
@@ -87,6 +95,33 @@
             </div>
         </a>
     </div>
+
+    <van-popup duration=".1" v-model:show="show" position="bottom" :style="{ backgroundColor: 'rgba(255,255,255,0)' }">
+        <template #default>
+            <div class="popup">
+                <div class="shareBody">
+                    <h5>分享给朋友</h5>
+                    <div class="flexBox">
+                        <a href="#">
+                            <div class="shareQQ aDiv"></div>
+                            <p>QQ</p>
+                        </a>
+                        <a href="#">
+                            <div class="shareQzone aDiv"></div>
+                            <p>qq空间</p>
+                        </a>
+                        <a href="#">
+                            <div class="shareWB aDiv"></div>
+                            <p>微博</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="cancelBtn" @click="show = false">
+                    取消
+                </div>
+            </div>
+        </template>
+    </van-popup>
 
 </template>
 
@@ -120,7 +155,33 @@ const activeName = ref('list');
 
 // let novelList = ref([]);
 let novelList = await getNovelList(id);
-let { start_time, title: updateInfo } = novelList[novelList.length - 1]
+console.log(novelList);
+console.log(novelList.slice(0, 20));
+let { start_time, title: updateInfo } = novelList[novelList.length - 1];
+
+/* List列表 */
+const list = ref([]);
+const loading = ref(false);
+const finished = ref(false);
+let start = 0;
+
+const onLoad = () => {
+    list.value = list.value.concat(novelList.slice(start, start + 20));
+
+    loading.value = false;
+    start = start + 20;
+
+    // 数据全部加载完成
+    if (list.value.length >= novelList.length) {
+        finished.value = true;
+    }
+};
+
+/* 分享弹出层 */
+const show = ref(false);
+const showShadow = () => {
+    show.value = true;
+}
 
 
 </script>
@@ -279,6 +340,8 @@ let { start_time, title: updateInfo } = novelList[novelList.length - 1]
     display: flex;
     height: 50px;
     border-top: 1px solid #ddd;
+    z-index: 7;
+    background: #fff;
 
     a {
         flex: 1;
@@ -317,10 +380,12 @@ let { start_time, title: updateInfo } = novelList[novelList.length - 1]
     position: relative;
     display: flex;
     align-items: center;
-    padding: 12px 12px 0 ;
+    padding: 12px 12px 0;
+    margin-bottom: 5px;
     height: 32px;
     box-sizing: border-box;
     border-top: 1px solid #ebebeb;
+
     h5 {
         position: relative;
         top: -1px;
@@ -337,6 +402,7 @@ let { start_time, title: updateInfo } = novelList[novelList.length - 1]
         top: 13px;
         right: 12px;
         font-size: 12px;
+
         .iconSort {
             width: 14px;
             height: 14px;
@@ -345,10 +411,97 @@ let { start_time, title: updateInfo } = novelList[novelList.length - 1]
             margin-right: 3px;
         }
     }
+
     span {
         padding-right: 48px;
         font-size: 12px;
         color: #999;
+    }
+}
+
+.listItem {
+    display: flex;
+    padding: 10px 15px;
+
+    .van-cell {
+        flex: 1;
+        margin-left: 12px;
+        padding: 0;
+
+        .van-cell__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            // color: #FF7830;
+            font-size: 15px;
+        }
+    }
+}
+
+.van-popup {
+    width: 94%;
+    left: 50%;
+    bottom: 12px;
+    // transform: translateX(-50%);
+    margin-left: -47%;
+    border-radius: 6px 6px 0 0;
+}
+
+.popup {
+    .shareBody {
+        height: 150px;
+        padding: 20px;
+        margin-bottom: 12px;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        h5 {
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        .flexBox {
+            display: flex;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 8px;
+                color: #28292d;
+                font-size: 14px;
+
+                div.aDiv {
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 6px;
+                    background-size: contain;
+                }
+
+                .shareQQ {
+                    background: url('/imgs/icon_qq.png');
+                }
+
+                .shareQzone {
+                    background: url('/imgs/icon_qqzone.png');
+                }
+
+                .shareWB {
+                    background: url('/imgs/icon_xl.png');
+                }
+            }
+        }
+    }
+
+    .cancelBtn {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #40AFFE;
+        border-radius: 6px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
     }
 }
 </style>
