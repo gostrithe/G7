@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import Home from '../views/Home.vue';
+import Category from '../views/CategoryView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,10 +17,33 @@ const router = createRouter({
       component: Home
     },
 
+    // { path: "/category", redirect: "/category/theme" },
     {
       path: '/category',
       name: 'category',
-      component: () => import('../views/CategoryView.vue')
+      component: Category,
+      chilren: [
+        {
+          path: 'theme',
+          // name: 'categorytheme',
+          component: () => import('../component/user/CategoryThemePage.vue'),
+        },
+        {
+          path: 'progress',
+          // name: 'categoryProgress',
+          component: () => import('../component/user/CategoryProgressPage.vue'),
+        },
+        {
+          path: 'masses',
+          // name: 'categoryMasses',
+          component: () => import('../component/user/CategoryMassesPage.vue'),
+        },
+        {
+          path: 'attribute',
+          // name: 'categoryAttribute',
+          component: () => import('../component/user/CategoryAttributePage.vue'),
+        },
+      ]
     },
 
     {
