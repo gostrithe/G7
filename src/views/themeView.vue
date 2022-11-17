@@ -1,18 +1,25 @@
 <template>
     <div>
         <!-- 主题 {{ this.$route.path }} -->
-        <div :class="`class-comic-item class-comic-item-${novel.comic_id}`" v-for="novel in dataList"
-            :key="novel.comic_id">
-            <img :src="`${novel.cover}!banner-600-x`" alt="">
-            <p class="comic-name">{{ novel.title }}</p>
-            <p class="comic-update">更新至第{{ novel.chapter_num }} 话</p>
+        <MyHeaderNavBar />
+        <div class="big_class-comic">
+            <div :class="`class-comic-item class-comic-item-${novel.comic_id}`" v-for="novel in dataList"
+                :key="novel.comic_id">
+                <img :src="`${novel.cover}!banner-600-x`" alt="">
+                <p class="comic-name">{{ novel.title }}</p>
+                <p class="comic-update">更新至第{{ novel.chapter_num }} 话</p>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-import { getFirstData} from '../api/theme'
+import { getFirstData } from '../api/theme'
+import MyHeaderNavBar from '../component/common/MyHeaderNavBar.vue'
 export default {
+    components: {
+        MyHeaderNavBar,
+    },
     data() {
         return {
             dataList: []
@@ -27,6 +34,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.big_class-comic{
+    padding-top: 8vw;;
+}
 .class-comic-item {
     display: inline-block;
     width: 29vw;
@@ -40,7 +50,8 @@ export default {
         text-overflow: ellipsis;
         overflow: hidden;
     }
-    .comic-update{
+
+    .comic-update {
         font-size: 0.4vw;
         color: gray;
     }

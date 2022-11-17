@@ -93,3 +93,13 @@
     padding-left: 14px;
     padding-right: 14px;
 }
+
+.van-nav-bar__text {
+    color: black;
+    font-weight: 1000;
+    font-size: 5vw;
+}
+:root{
+    
+    --van-nav-bar-icon-color:#FF620E;
+}
