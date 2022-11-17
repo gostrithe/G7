@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- 主题 {{ this.$route.path }} -->
-        <MyHeaderNavBar />
+        <MyHeaderNavBar :myheadernavbar="true" :showRight="true" title="" leftText="霸主" />
         <div class="big_class-comic">
             <div :class="`class-comic-item class-comic-item-${novel.comic_id}`" v-for="novel in dataList"
                 :key="novel.comic_id">
@@ -15,7 +15,7 @@
 
 <script>
 import { getFirstData } from '../api/theme'
-import MyHeaderNavBar from '../component/common/MyHeaderNavBar.vue'
+import MyHeaderNavBar from '@common/MyHeaderNavBar.vue'
 export default {
     components: {
         MyHeaderNavBar,
