@@ -1,17 +1,18 @@
 <template>
     <div>
-        主题 {{ this.$route.path }}
-        <div v-for="novel in dataList" :key="novel.comic_id">
+        <!-- 主题 {{ this.$route.path }} -->
+        <div :class="`class-comic-item class-comic-item-${novel.comic_id}`" v-for="novel in dataList"
+            :key="novel.comic_id">
             <img :src="`${novel.cover}!banner-600-x`" alt="">
-            <h4>{{ novel.title }}</h4>
-            <p>更新至第 {{ novel.chapter_num }} 话</p>
+            <p class="comic-name">{{ novel.title }}</p>
+            <p class="comic-update">更新至第{{ novel.chapter_num }} 话</p>
         </div>
     </div>
 </template>
 
 <script>
-import { getFirstData } from '../api/theme'
-    export default {
+import { getFirstData} from '../api/theme'
+export default {
     data() {
         return {
             dataList: []
@@ -20,11 +21,29 @@ import { getFirstData } from '../api/theme'
     async mounted() {
         console.log('主题页面加载');
         const data = await getFirstData();
-        this.dataList = data
+        this.dataList = data;
     },
 };
 </script>
 
 <style lang="scss" scoped>
+.class-comic-item {
+    display: inline-block;
+    width: 29vw;
+    height: 40vw;
+    margin: 3vw 2vw;
 
+    .comic-name {
+        font-size: 4vw;
+        font-weight: 1000;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .comic-update{
+        font-size: 0.4vw;
+        color: gray;
+    }
+
+}
 </style>

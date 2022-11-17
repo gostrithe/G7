@@ -13,6 +13,6 @@ module.exports = () => {
         // homeBannerData
         myHomeData,
         // assortImgData
-        theme_1data
+        theme_1data,
     }
 }
