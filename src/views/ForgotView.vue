@@ -1,12 +1,13 @@
 <template>
     <div class="login-header-wrapper">
-        <div class="login-header">
+        <!-- <div class="login-header">
             <a class="header-back" href="javascript:history.back()"></a>
             <a class="header-forgot">忘记密码</a>
-        </div>
+        </div> -->
+        <MyHeaderNavBar left-text="忘记密码" />
         <div class="login-header-logo"></div>
     </div>
-    <div class="form-forgot" id="findPasswordForm" action="" name="login" method="POST">
+    <!-- <div class="form-forgot" id="findPasswordForm" action="" name="login" method="POST">
         <div class="phone-input">
             <span class="phone86">+86</span>
             <input class="input" id="phoneInput" type="text" name="phone" placeholder="请输入手机号" maxlength="11">
@@ -19,18 +20,24 @@
             <input class="input" id="password" type="password" name="password" placeholder="设置密码">
         </div>
     </div>
-    <button class="finish-button">完成</button>
+    <button class="finish-button">完成</button> -->
+    <MyLoginPage buttonconten="完成"/>
 </template>
 
 <script>
+import MyHeaderNavBar from "@common/MyHeaderNavBar.vue"
+import MyLoginPage from "@common/MyLoginPage.vue"
 export default {
-
+    components: {
+        MyHeaderNavBar,
+        MyLoginPage
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 .login-header-wrapper {
-    background-color: #F8F0FB;
+    // background-color: #F8F0FB;
     height: 20vw;
 
 
@@ -61,82 +68,5 @@ export default {
     }
 }
 
-.form-forgot {
-    background-color: #fff;
 
-    .phone-input {
-        box-sizing: border-box;
-        width: 77vw;
-        height: 10vw;
-        margin: -2vw auto;
-        font-size: 4vw;
-        line-height: 10vw;
-        border: 0.1vw solid #ddd;
-        border-radius: 50vw;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-
-        .phone86 {
-            margin-left: -12vw;
-        }
-
-        .input {
-            border: 1vw solid white;
-        }
-    }
-
-    .code-input {
-        box-sizing: border-box;
-        width: 78vw;
-        height: 10vw;
-        margin: 4vw auto;
-        font-size: 4vw;
-        line-height: 10vw;
-        border: 0.1vw solid #ddd;
-        border-radius: 50vw;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-
-        .input {
-            border: 1vw solid white;
-            height: 8vw;
-        }
-    }
-
-    .password-input {
-        box-sizing: border-box;
-        width: 78vw;
-        height: 10vw;
-        margin: -2vw auto;
-        font-size: 4vw;
-        line-height: 10vw;
-        border: 0.1vw solid #ddd;
-        border-radius: 50vw;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-
-        .input {
-            width: 68vw;
-            border: 1vw solid white;
-
-        }
-    }
-}
-
-.finish-button {
-    display: block;
-    width: 80vw;
-    height: 12vw;
-    margin: 7vw auto 0;
-    font-size: 5vw;
-    text-align: center;
-    line-height: .16vw;
-    color: #fff;
-    background: #FF620E;
-    border: 0;
-    border-radius:23vw;
-}
 </style>

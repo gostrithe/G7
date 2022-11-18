@@ -2,33 +2,33 @@
     <div class="login-header-wrapper">
         <div class="login-header">
             <a class="header-back" href="javascript:history.back()"></a>
-           
-            <router-link class="header-forgot" to="/forgot" >
+
+            <router-link class="header-forgot" to="/forgot">
                 忘记密码
             </router-link>
         </div>
         <div class="login-header-logo"></div>
     </div>
     <van-form @failed="onFailed">
-        <van-cell-group inset>
+        <van-cell-group class="vangroup" inset>
             <!-- 通过 pattern 进行正则校验 -->
-            <van-field v-model="value1" label="用户名" name="pattern" placeholder="请输入用户名"
-                :rules="[{ pattern, message: '请输入正确用户名' }]" />
+            <van-field class="vanfield" v-model="value1" label="用户名" name="pattern" placeholder="请输入手机号/用户名"
+                :rules="[{ pattern, message: '请输入正确手机号/用户名' }]" />
             <!-- 通过 validator 进行函数校验 -->
-            <van-field v-model="value2" label="密码" name="validator" placeholder="请输入密码"
+            <van-field class="vanfield" v-model="value2" label="密码" name="validator" placeholder="请输入密码"
                 :rules="[{ validator, message: '请输入正确的密码' }]" />
 
 
         </van-cell-group>
         <div style="margin: 16px;">
-            <van-button round block type="primary" native-type="submit">
-                提交
+            <van-button class="vanbutton" round block type="primary" native-type="submit">
+                登录
             </van-button>
         </div>
     </van-form>
 
     <p class="fast-register">
-        <router-link  class="text" to="/register">手机号快速注册</router-link>
+        <router-link class="text" to="/register">手机号快速注册</router-link>
 
         <van-icon name="arrow" />
     </p>
@@ -182,4 +182,20 @@ export default {
         }
     }
 }
+
+.vanbutton {
+    background-color: #FF620E;
+    width: 78vw;
+    // height: 12vw;
+    margin: 0 auto;
+    font-size: 5vw;
+}
+
+.vanfield {
+    width: 74vw;
+    // height: 12vw;
+    margin: 0 auto;
+    color: #eee;
+}
+
 </style>

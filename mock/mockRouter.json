@@ -4,5 +4,6 @@
     "/api/novel/content": "/novelContentData",
     "/api/home/baner": "/homeBannerData",
     "/api/home": "/myHomeData",
-    "/api/category/theme1": "/theme_1data"
+    "/api/category/theme1": "/theme_1data",
+    "/api/category/progress1": "/progress_1data"
 }

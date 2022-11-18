@@ -3,6 +3,7 @@
         <li :id="index"
             :style="{ backgroundImage: `url(https://static.mkzcdn.com/mobile/img/catalogs/jindu/pic_class_img${index}@2x.png)`}"
             class="catalog-item" v-for="index  in imgArrIndex">
+            <a :href="`/category/progress/${index}`"></a>
         </li>
     </ul>
 

@@ -86,4 +86,5 @@ export default {
 .bigbox {
     padding-bottom: 70px;
 }
+
 </style>
