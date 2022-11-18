@@ -1,5 +1,7 @@
 <template>
     <div>
+        <van-loading class="loading" v-if="!bannerNovels.length" size="70" type="spinner" />
+
         <homeHeader :bannerNovels="bannerNovels"></homeHeader>
 
         <div class="center-wrapper">
@@ -26,7 +28,7 @@
 </template>
 
 <script>
-import { getBannerUrl } from '../api/home';
+import { getData } from '../api/home';
 import homeHeader from '../components/home/homeHeader.vue';
 import mainContent from '../components/home/mainContent.vue';
 import homeKzjp from '../components/home/home-kzjp.vue';
@@ -39,20 +41,35 @@ export default {
         homeKzjp,
         homeSszk
     },
-    data() {
-        return {
-            bannerNovels: [],
-            kzjpNovels: [],
-            djzpNovels: {},
-            sszkNovels: {},
-        };
+    // data() {
+    //     return {
+    //         bannerNovels: [],
+    //         kzjpNovels: [],
+    //         djzpNovels: {},
+    //         sszkNovels: {},
+    //     };
+    // },
+    computed: {
+        bannerNovels() {
+            return this.$store.state.bannerNovels;
+        },
+        kzjpNovels() {
+            return this.$store.state.kzjpNovels;
+        },
+        djzpNovels() {
+            return this.$store.state.djzpNovels;
+        },
+        sszkNovels() {
+            return this.$store.state.sszkNovels;
+        }
     },
+
     async mounted() {
-        const { data } = await getBannerUrl();
-        this.bannerNovels = data.bannerNovels;
-        this.kzjpNovels = data.kzjpNovels;
-        this.djzpNovels = data.djzpNovels;
-        this.sszkNovels = data.sszkNovels;
+        // const { data } = await getData();
+        // this.bannerNovels = data.bannerNovels;
+        // this.kzjpNovels = data.kzjpNovels;
+        // this.djzpNovels = data.djzpNovels;
+        // this.sszkNovels = data.sszkNovels;
     },
 };
 </script>
@@ -66,5 +83,13 @@ footer {
     display: flex;
     justify-content: center;
     padding-bottom: 70px;
+}
+
+.loading {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 </style>

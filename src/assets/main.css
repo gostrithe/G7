@@ -93,3 +93,10 @@
     padding-left: 14px;
     padding-right: 14px;
 }
+
+.endBox .van-popup {
+    width: 33.3333333333333%;
+    left: 98%;
+    bottom: var(--van-toast-position-bottom-distance);
+    border-radius: 6px;
+}

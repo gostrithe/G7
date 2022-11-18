@@ -1,9 +1,10 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
+import store from './store'
 
 import { ConfigProvider } from 'vant';
-import { Tabbar, TabbarItem, Icon, Button, Swipe, SwipeItem, Grid, GridItem, Image, Cell, Divider, Tag, Card, NavBar, ActionBar, ActionBarIcon, ActionBarButton, List, Popup } from 'vant';
+import { Loading, Tabbar, TabbarItem, Icon, Button, Swipe, SwipeItem, Grid, GridItem, Image, Cell, Divider, Tag, Card, NavBar, ActionBar, ActionBarIcon, ActionBarButton, List, Popup, Toast } from 'vant';
 import { Tab, Tabs, ShareSheet, CellGroup } from 'vant';
 import { Form, Field} from 'vant'
 /* vant所有组件样式（不推荐） */
@@ -14,7 +15,7 @@ import './assets/main.css';
 const app = createApp(App);
 
 
-
+app.use(store);
 app.use(router);
 
 /* vant */
@@ -39,8 +40,8 @@ app.use(ActionBarIcon);
 app.use(ActionBarButton);
 app.use(List);
 app.use(Popup);
-
-
+app.use(Toast);
+app.use(Loading);
 
 app.use(ShareSheet);
 
