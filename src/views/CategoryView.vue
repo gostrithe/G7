@@ -2,8 +2,10 @@
     <div class="bigbox">
         <div v-if="!this.$route.path.includes('/theme')">
             <van-tabs v-model:active="activeTab" line-width="10px" line-height="4px" color="#FF7830"
-                title-active-color="#FF7830" shrink @click-tab="onClickTab">
-                <van-tab title="题材">
+                title-active-color="#FF7830" shrink @click-tab="onClickTab"  duration="0.4"
+                :sticky="true" 
+                :animated="true">
+                <van-tab title="题材" >
                     <CategoryThemePage />
                 </van-tab>
                 <van-tab title="进度">
@@ -12,7 +14,7 @@
                 </van-tab>
                 <van-tab title="属性">
                 </van-tab>
-            </van-tabs>
+            </van-tabs >
             <router-link class="catagory-search" to="/search"></router-link>
         </div>
         <main>
@@ -86,5 +88,4 @@ export default {
 .bigbox {
     padding-bottom: 70px;
 }
-
 </style>
