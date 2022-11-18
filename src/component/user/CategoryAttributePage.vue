@@ -3,6 +3,8 @@
         <li :id="index"
             :style="{ backgroundImage: `url(https://static.mkzcdn.com/mobile/img/catalogs/shuxing/pic_class_img${index}@2x.png)`}"
             class="catalog-item" v-for="index  in imgArrIndex">
+            <a :href="`/category/attribute/${index}`"></a>
+
         </li>
     </ul>
 
@@ -13,7 +15,7 @@ export default {
     data() {
         return {
             index: 26,
-            imgArrIndex: [32,33,34]
+            imgArrIndex: [32, 33, 34]
             // backgroundimage:
         }
     },
@@ -35,7 +37,14 @@ export default {
         list-style: none;
         margin: 2vw 2vw;
         padding: 0;
+
         // overflow:hidden;  
+        a {
+            display: block;
+            width: 46vw;
+            height: 26vw;
+
+        }
     }
 }
 </style>

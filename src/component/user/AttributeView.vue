@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- 主题 {{ this.$route.path }} -->
-        <MyHeaderNavBar :myheadernavbar="true" :showRight="true" title="" leftText="连载" />
+        <MyHeaderNavBar :myheadernavbar="true" :showRight="true" title="" leftText="免费" />
         <div class="big_class-comic">
             <div :class="`class-comic-item class-comic-item-${novel.comic_id}`" v-for="novel in dataList"
                 :key="novel.comic_id">
@@ -14,11 +14,12 @@
 </template>
 
 <script>
-import { getprogressData } from '../../api/progress'
+import { getAttributeData } from '../../api/attribute'
 import MyHeaderNavBar from '@common/MyHeaderNavBar.vue'
 export default {
     components: {
         MyHeaderNavBar,
+        getAttributeData,
     },
     data() {
         return {
@@ -27,7 +28,7 @@ export default {
     },
     async mounted() {
         console.log('主题页面加载');
-        const data = await getprogressData();
+        const data = await  getAttributeData();
         this.dataList = data;
     },
 };
@@ -37,7 +38,6 @@ export default {
 .big_class-comic {
     padding-top: 8vw;
     padding-bottom: 20vw;
-    
 }
 
 .class-comic-item {

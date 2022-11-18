@@ -27,12 +27,6 @@ const router = createRouter({
           path: 'progress',
           // name: 'categoryProgress',
           component: () => import('../component/user/CategoryProgressPage.vue'),
-          children: [
-            {
-              path: '/category/progress/:progressId(\\d+)',
-              component: () => import('../component/user/ProgressView.vue')
-            },
-          ]
         },
         {
           path: 'masses',
@@ -48,10 +42,21 @@ const router = createRouter({
           path: '/category/theme/:themeId(\\d+)',
           component: () => import('../component/user/themeView.vue')
         },
-
-
-
+      
+       
       ]
+    },
+    {
+      path: '/category/progress/:progressId(\\d+)',
+      component: () => import('../component/user/ProgressView.vue')
+    },
+    {
+      path: '/category/masses/:massesId(\\d+)',
+      component: () => import('../component/user/MassesView.vue')
+    },
+    {
+      path: '/category/attribute/:attributeId(\\d+)',
+      component: () => import('../component/user/AttributeView.vue')
     },
 
     {

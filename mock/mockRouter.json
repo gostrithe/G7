@@ -5,5 +5,7 @@
     "/api/home/baner": "/homeBannerData",
     "/api/home": "/myHomeData",
     "/api/category/theme1": "/theme_1data",
-    "/api/category/progress1": "/progress_1data"
+    "/api/category/progress1": "/progress_1data",
+    "/api/category/masses1": "/masses_1data",
+    "/api/category/attribute1": "/attribute_1data"
 }

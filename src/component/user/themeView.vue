@@ -34,9 +34,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.big_class-comic{
-    padding-top: 8vw;;
+.big_class-comic {
+    padding-top: 8vw;
+    ;
 }
+
 .class-comic-item {
     display: inline-block;
     width: 29vw;
