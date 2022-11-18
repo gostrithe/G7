@@ -1,143 +1,156 @@
 <template>
-    <!-- <div v-if="!readingNovel"> -->
-    <div v-if="!route.params.chapterId">
-        <div class="navBar">
-            <van-nav-bar :title="title" left-arrow @click-left="onClickLeft" :border="false">
-                <template #right>
-                    <van-icon @click="showShadow" name="/imgs/ic_nav_share.png" size="21" />
-                    <van-icon @click="goHome" name="/imgs/ic_nav_gohome.png" size="21" />
+    <div>
+        <!-- <div v-if="!readingNovel"> -->
+        <div v-if="!route.params.chapterId">
+            <div class="navBar">
+                <van-nav-bar :title="title" left-arrow @click-left="onClickLeft" :border="false">
+                    <template #right>
+                        <van-icon @click="showShadow" name="/imgs/ic_nav_share.png" size="21" />
+                        <van-icon @click="goHome" name="/imgs/ic_nav_gohome.png" size="21" />
+                    </template>
+                </van-nav-bar>
+            </div>
+
+            <div class="coverBox">
+                <van-image fit="contain" width="100%" height="210" :src="`${cover_lateral}!banner-600-x`" />
+                <div class="info">
+                    <p class="title">{{ title }}</p>
+                    <p class="underTitle">主笔id:{{ author_id }}</p>
+                    <p class="underTitle">{{ parseThemeId(theme_id) }}</p>
+                    <div class="hotNumber">
+                        <van-icon name="fire" />{{ readCount }}
+                    </div>
+                </div>
+                <div class="shadow">
+                    <img class="bg1" src="/imgs/bg_detail_bannerbg.png">
+                    <img class="bg2" src="/imgs/bg_banner.png">
+                </div>
+            </div>
+
+            <div class="beginAndContinute">
+                <van-action-bar>
+                    <van-action-bar-icon icon="/imgs/ic_detail_coll_off.png" :text="`收藏(${colletionCount})`" />
+                    <van-action-bar-button type="danger" text="开始阅读" @click="onClickButton" />
+                </van-action-bar>
+            </div>
+
+            <div class="detailAndList">
+                <van-tabs v-model:active="activeName" line-width="55" color="#ff7830" title-active-color="#000">
+                    <van-tab title-style="font-size: 16px;" title="详情" name="detail">
+                        <template #default>
+                            <div>
+                                <div class="detailInfo">
+                                    {{ content }}
+                                    <div class="notice">
+                                        {{ notice }}
+                                    </div>
+                                </div>
+                                <div class="recommend">
+                                    <h3>^_^主人，这有相关漫画为你推荐~</h3>
+                                    <!-- <novelsList3></novelsList3> -->
+                                </div>
+                            </div>
+                        </template>
+                    </van-tab>
+                    <van-tab title-style="font-size: 16px;" title="目录" name="list">
+                        <template #default>
+                            <div>
+                                <div class="listTop">
+                                    <h5>连载</h5>
+                                    <span class="van-ellipsis">{{ new Date((start_time *
+                                            1000)).toLocaleDateString().split('/').join('.')
+                                    }}更新至{{ updateInfo }}</span>
+                                    <div class="sortBtn" @click="onSortBtnClick">
+                                        <div class="iconSort"></div>
+                                        {{ sortText[0] }}
+                                    </div>
+                                </div>
+                                <van-list v-model:loading="loading" :finished="finished" finished-text="没有更多了"
+                                    @load="onLoad">
+                                    <div class="listItem" v-for="(novel, index) in list" :key="novel.chapter_id"
+                                        @click="onChapterClick(id, novel.chapter_id, index)">
+                                        <van-image radius="4" width="120" height="68"
+                                            :src="`${novel.cover}!banner-600-x`" />
+                                        <van-cell :title="novel.title"
+                                            :label="new Date(novel.start_time * 1000).toLocaleDateString().split('/').join('-')" />
+                                    </div>
+                                </van-list>
+                            </div>
+                        </template>
+                    </van-tab>
+                </van-tabs>
+            </div>
+
+            <div class="bottomBar">
+                <a href="/login">
+                    <div class="item">
+                        <i class="yp"></i>
+                        <span>月票</span>
+                    </div>
+                </a>
+                <a href="/login">
+                    <div class="item">
+                        <i class="ds"></i>
+                        <span>打赏</span>
+                    </div>
+                </a>
+                <a href="#" @click="showShadow">
+                    <div class="item">
+                        <i class="share"></i>
+                        <span>分享</span>
+                    </div>
+                </a>
+            </div>
+
+            <van-popup duration=".1" v-model:show="show" position="bottom"
+                :style="{ backgroundColor: 'rgba(255,255,255,0)' }">
+                <template #default>
+                    <div class="popup">
+                        <div class="shareBody">
+                            <h5>分享给朋友</h5>
+                            <div class="flexBox">
+                                <a href="/login">
+                                    <div class="shareQQ aDiv"></div>
+                                    <p>QQ</p>
+                                </a>
+                                <a href="/login">
+                                    <div class="shareQzone aDiv"></div>
+                                    <p>qq空间</p>
+                                </a>
+                                <a href="/login">
+                                    <div class="shareWB aDiv"></div>
+                                    <p>微博</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cancelBtn" @click="show = false">
+                            取消
+                        </div>
+                    </div>
                 </template>
-            </van-nav-bar>
+            </van-popup>
         </div>
-
-        <div class="coverBox">
-            <van-image fit="contain" width="100%" height="210" :src="`${cover_lateral}!banner-600-x`" />
-            <div class="info">
-                <p class="title">{{ title }}</p>
-                <p class="underTitle">主笔id:{{ author_id }}</p>
-                <p class="underTitle">{{ parseThemeId(theme_id) }}</p>
-                <div class="hotNumber">
-                    <van-icon name="fire" />{{ readCount }}
-                </div>
-            </div>
-            <div class="shadow">
-                <img class="bg1" src="/imgs/bg_detail_bannerbg.png">
-                <img class="bg2" src="/imgs/bg_banner.png">
-            </div>
-        </div>
-
-        <div class="beginAndContinute">
-            <van-action-bar>
-                <van-action-bar-icon icon="/imgs/ic_detail_coll_off.png" :text="`收藏(${colletionCount})`" />
-                <van-action-bar-button type="danger" text="开始阅读" @click="onClickButton" />
-            </van-action-bar>
-        </div>
-
-        <div class="detailAndList">
-            <van-tabs v-model:active="activeName" line-width="55" color="#ff7830" title-active-color="#000">
-                <van-tab title-style="font-size: 16px;" title="详情" name="detail">
-                    <template #default>
-                        <div>
-                            <div class="detailInfo">
-                                {{ content }}
-                                <div class="notice">
-                                    {{ notice }}
-                                </div>
-                            </div>
-                            <div class="recommend">
-                                <h3>^_^主人，这有相关漫画为你推荐~</h3>
-                                <!-- <novelsList3></novelsList3> -->
-                            </div>
-                        </div>
-                    </template>
-                </van-tab>
-                <van-tab title-style="font-size: 16px;" title="目录" name="list">
-                    <template #default>
-                        <div>
-                            <div class="listTop">
-                                <h5>连载</h5>
-                                <span class="van-ellipsis">{{ new Date((start_time *
-                                        1000)).toLocaleDateString().split('/').join('.')
-                                }}更新至{{ updateInfo }}</span>
-                                <div class="sortBtn" @click="onSortBtnClick">
-                                    <div class="iconSort"></div>
-                                    {{ sortText[0] }}
-                                </div>
-                            </div>
-                            <van-list v-model:loading="loading" :finished="finished" finished-text="没有更多了"
-                                @load="onLoad">
-                                <div class="listItem" v-for="(novel, index) in list" :key="novel.chapter_id"
-                                    @click="onChapterClick(id, novel.chapter_id, index)">
-                                    <van-image radius="4" width="120" height="68"
-                                        :src="`${novel.cover}!banner-600-x`" />
-                                    <van-cell :title="novel.title"
-                                        :label="new Date(novel.start_time * 1000).toLocaleDateString().split('/').join('-')" />
-                                </div>
-                            </van-list>
-                        </div>
-                    </template>
-                </van-tab>
-            </van-tabs>
-        </div>
-
-        <div class="bottomBar">
-            <a href="/login">
-                <div class="item">
-                    <i class="yp"></i>
-                    <span>月票</span>
-                </div>
-            </a>
-            <a href="/login">
-                <div class="item">
-                    <i class="ds"></i>
-                    <span>打赏</span>
-                </div>
-            </a>
-            <a href="#" @click="showShadow">
-                <div class="item">
-                    <i class="share"></i>
-                    <span>分享</span>
-                </div>
-            </a>
-        </div>
-
-        <van-popup duration=".1" v-model:show="show" position="bottom"
-            :style="{ backgroundColor: 'rgba(255,255,255,0)' }">
-            <template #default>
-                <div class="popup">
-                    <div class="shareBody">
-                        <h5>分享给朋友</h5>
-                        <div class="flexBox">
-                            <a href="/login">
-                                <div class="shareQQ aDiv"></div>
-                                <p>QQ</p>
-                            </a>
-                            <a href="/login">
-                                <div class="shareQzone aDiv"></div>
-                                <p>qq空间</p>
-                            </a>
-                            <a href="/login">
-                                <div class="shareWB aDiv"></div>
-                                <p>微博</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cancelBtn" @click="show = false">
-                        取消
-                    </div>
-                </div>
-            </template>
-        </van-popup>
+        <router-view :sT="scrollY"></router-view>
     </div>
-    <router-view></router-view>
 </template>
 
 <script setup>
 // import novelsList3 from '../components/home/novelsList3.vue';
 import parseThemeId from '../api/parseThemeId';
-import { onUnmounted, provide, reactive, ref, toRefs, watch } from 'vue';
+import { computed, onMounted, onUnmounted, provide, reactive, ref, toRefs, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { getNovelDetail, getReadCount, getColletionCount, getNovelList } from '../api/home';
+import useScrollRemenber from '../hook/useScrollRemenber';
+
+// const sy = ref(0)
+// const rot = useRoute()
+// window.addEventListener('scroll', (e) => {
+//     if (!rot.params.chapterId) {
+//         console.log(sy.value);
+//         sy.value = window.scrollY
+//     }
+// })
+const scrollY = useScrollRemenber()
 
 const route = useRoute();
 const id = route.params.id;

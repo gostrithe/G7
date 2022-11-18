@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div ref="novelContent" class="novelContent">
         <ul>
             <li v-for="page in pageList" :key="page.page_id">
                 <img ref="imgs" :src="page.image">
@@ -32,7 +32,7 @@
 
 <script setup>
 import { Toast } from 'vant';
-import { computed, inject, onMounted, onUnmounted, ref } from 'vue';
+import { computed, inject, onBeforeUnmount, onMounted, onUnmounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { getNovelContent, getNovelList } from '../api/home';
 const route = useRoute();
@@ -85,19 +85,20 @@ heightArr.unshift(0);
 //     }
 // });
 
+const novelContent = ref(null);
 function upDatePageNum(event) {
     if (window.scrollY > heightArr[pageNum.value]) {
         pageNum.value++;
-        console.log('+');
     }
     if (window.scrollY < heightArr[(pageNum.value - 1)]) {
         pageNum.value--;
-        console.log('-');
     }
 }
 onMounted(() => window.addEventListener('scroll', upDatePageNum));
 
-onUnmounted(() => window.removeEventListener('scroll', upDatePageNum));
+onBeforeUnmount(() => {
+    window.removeEventListener('scroll', upDatePageNum);
+});
 
 const onPreClick = () => {
     if (listIndex.value == 0) {
@@ -113,7 +114,11 @@ const onPreClick = () => {
     // }
 };
 
+const props = defineProps(['sT'])
 const backToNovelDetail = () => {
+    // console.log(props.sT);
+    document.documentElement.scrollTop = props.sT;
+
     router.push(`/${route.params.id}`);
 };
 

@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import { getData } from '../api/home';
 import homeHeader from '../components/home/homeHeader.vue';
 import mainContent from '../components/home/mainContent.vue';
 import homeKzjp from '../components/home/home-kzjp.vue';
 import homeSszk from '../components/home/home-sszk.vue';
+import { mapActions } from 'vuex';
 
 export default {
     components: {
@@ -64,7 +64,12 @@ export default {
         }
     },
 
+    methods: {
+        ...mapActions(['fetchData'])
+    },
+
     async mounted() {
+        this.fetchData()
         // const { data } = await getData();
         // this.bannerNovels = data.bannerNovels;
         // this.kzjpNovels = data.kzjpNovels;

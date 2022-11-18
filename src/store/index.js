@@ -1,6 +1,8 @@
 import { createStore } from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 
+import { getData } from '../api/home';
+
 const store = createStore({
     state() {
         return {
@@ -8,7 +10,7 @@ const store = createStore({
             kzjpNovels: [],
             djzpNovels: {},
             sszkNovels: {},
-        }
+        };
     },
 
     getters: {
@@ -16,11 +18,19 @@ const store = createStore({
     },
 
     actions: {
-
+        async fetchData({ commit }) {
+            const { data } = await getData();
+            commit('addHomeData', data);
+        }
     },
 
     mutations: {
-
+        addHomeData(state, data) {
+            state.bannerNovels = data.bannerNovels;
+            state.kzjpNovels = data.kzjpNovels;
+            state.djzpNovels = data.djzpNovels;
+            state.sszkNovels = data.sszkNovels;
+        }
     },
 
     modules: {
@@ -30,4 +40,6 @@ const store = createStore({
     plugins: [
         createPersistedState(),
     ]
-})
+});
+
+export default store;
