@@ -2,7 +2,7 @@
   "name": "g7",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "mock": "json-server ./mock/mockData.js -r ./mock/mockRouter.json -p 7777 --watch"
@@ -11,7 +11,9 @@
     "axios": "^1.1.3",
     "vant": "^3.6.5",
     "vue": "^3.2.38",
-    "vue-router": "^4.1.5"
+    "vue-router": "^4.1.5",
+    "vuex": "^4.0.2",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",

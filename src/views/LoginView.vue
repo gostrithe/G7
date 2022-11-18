@@ -122,7 +122,7 @@ export default {
         width: 28vw;
         height: 18vw;
         margin: 10vw auto;
-        background: url('../../public/imgs/pic_login_logo@2x.png') no-repeat center center;
+        background: url('/imgs/pic_login_logo@2x.png') no-repeat center center;
         background-size: cover;
     }
 }

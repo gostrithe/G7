@@ -105,7 +105,14 @@ const router = createRouter({
     {
       path: '/:id(\\d+)',
       name: 'novel',
-      component: () => import('../views/NovelView.vue')
+      component: () => import('../views/NovelView.vue'),
+      children: [
+        {
+          path: '/:id(\\d+)/:chapterId(\\d+)',
+          name: 'novelContent',
+          component: () => import('../views/NovelContentView.vue')
+        }
+      ]
     },
 
     {

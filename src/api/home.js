@@ -1,6 +1,6 @@
 import { doGet } from './crud';
 
-export async function getBannerUrl() {
+export async function getData() {
     return await doGet('/myHomeData');
 }
 
@@ -11,13 +11,13 @@ export async function getNovelDetail(id) {
 
 export async function getReadCount(id) {
     let { data: { read_count } } = await doGet(`https://comic.mkzcdn.com/comic/info/count/?comic_id=${id}`);
-    read_count = (read_count / Math.pow(10, 8)).toFixed(2) + '亿'
+    read_count = (read_count / Math.pow(10, 8)).toFixed(2) + '亿';
     return read_count;
 }
 
 export async function getColletionCount(id) {
     let { data: { collection_count } } = await doGet(`https://comic.mkzcdn.com/comic/info/count/?comic_id=${id}`);
-    collection_count = (collection_count / Math.pow(10, 4)).toFixed(1) + '万'
+    collection_count = (collection_count / Math.pow(10, 4)).toFixed(1) + '万';
     return collection_count;
 }
 
@@ -26,9 +26,15 @@ export async function getNovelList(id) {
     return data;
 }
 
+export async function getNovelContent(id, chapter) {
+    let { data: { page } } = await doGet(`https://comic.mkzcdn.com/chapter/content/v1/?chapter_id=${chapter}&comic_id=${id}&format=1&quality=1&sign=0&type=1&uid=0`);
+    return page;
+}
+
 export default {
-    getBannerUrl,
+    getData,
     getNovelDetail,
     getColletionCount,
-    getNovelList
+    getNovelList,
+    getNovelContent
 };

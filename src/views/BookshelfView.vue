@@ -1,18 +1,17 @@
 <template>
-    <BookShelfHeader />
-    
-
-    <router-view></router-view>
-
+    <div>
+        <BookShelfHeader />
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
-import BookShelfHeader from '../component/user/BookShelfHeader.vue'
+import BookShelfHeader from '../component/user/BookShelfHeader.vue';
 export default {
     components: {
         BookShelfHeader,
     }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -30,8 +29,8 @@ export default {
     background-repeat: no-repeat;
     background-size: 9vw;
     background-position: 4vw 1vw;
-  
-  
+
+
 
     .btn_dl {
         float: right;
