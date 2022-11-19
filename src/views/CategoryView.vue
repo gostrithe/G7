@@ -28,7 +28,7 @@
         <main>
             <!-- 路由出口 router-link对应的内容会呈现在RouterView容器中 -->
 
-            <!-- <router-view></router-view> -->
+            <router-view></router-view>
         </main>
     </div>
 </template>

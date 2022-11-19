@@ -6,7 +6,7 @@
           <!-- 底部导航条切换组件添加过渡效果 -->
           <transition name="slide-fade" mode="out-in">
             <!-- 缓存组件，切换组件后仍然保持活跃 -->
-            <keep-alive>
+            <keep-alive exclude="NovelView">
               <component :is="Component" />
             </keep-alive>
           </transition>
@@ -45,9 +45,10 @@ export default {
   watch: {
     $route(e) { // 监听$route，自动传入 route对象
       const name = e.name;
+      const params = e.params;
       if (name == 'login' || name == 'register' || name == 'notFound' || name == 'forgot') {
         this.condition = false;
-      } else if (e.params.id || e.params.themeId) {
+      } else if (params.id || params.themeId || params.progressId || params.massesId || params.attributeId) {
         this.condition = false;
       } else {
         this.condition = true;

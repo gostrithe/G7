@@ -4,7 +4,7 @@
         <MyHeaderNavBar :myheadernavbar="true" :showRight="true" title="" leftText="连载" />
         <div class="big_class-comic">
             <div :class="`class-comic-item class-comic-item-${novel.comic_id}`" v-for="novel in dataList"
-                :key="novel.comic_id">
+                :key="novel.comic_id" @click="$router.push(`/${novel.comic_id}`)">
                 <img :src="`${novel.cover}!banner-600-x`" alt="">
                 <p class="comic-name">{{ novel.title }}</p>
                 <p class="comic-update">更新至第{{ novel.chapter_num }} 话</p>

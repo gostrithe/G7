@@ -26,21 +26,25 @@ const router = createRouter({
         {
           path: 'progress',
           // name: 'categoryProgress',
-          component: () => import('../component/user/CategoryProgressPage.vue'),
+          // component: () => import('../component/user/CategoryProgressPage.vue'),
+          component: () => import('../views/Brank.vue'),
         },
         {
           path: 'masses',
           // name: 'categoryMasses',
-          component: () => import('../component/user/CategoryMassesPage.vue'),
+          // component: () => import('../component/user/CategoryMassesPage.vue'),
+          component: () => import('../views/Brank.vue'),
         },
         {
           path: 'attribute',
           // name: 'categoryAttribute',
-          component: () => import('../component/user/CategoryAttributePage.vue'),
+          // component: () => import('../component/user/CategoryAttributePage.vue'),
+          component: () => import('../views/Brank.vue'),
         },
         {
           path: '/category/theme/:themeId(\\d+)',
           component: () => import('../component/user/themeView.vue')
+          // component: () => import('../views/Brank.vue'),
         },
       
        
