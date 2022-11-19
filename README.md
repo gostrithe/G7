@@ -1,29 +1,31 @@
 # G7
 
-This template should help get you started developing with Vue 3 in Vite.
+## 仿漫客栈手机H5端
 
-## Recommended IDE Setup
+仿漫客栈手机H5端为用户提供了推荐频道（内含”客栈精品、独家作品等块）、漫画详情页、漫画分类、书架、用户登录等功能，覆盖了线上查找画、查看漫画详情、观看漫画等全流程服务；    
+    
+**技术栈：** vue全家桶：vue3+vue-Router+vant3+vuex+axios;
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+**负责模块：**
 
-## Customize configuration
+- 首页模块
+- 漫画详情
+- 漫画内容 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+**项目亮点：**
+- 功能特色：
+  
+    - 漫画章节列表提供正序逆序人性化按钮，且页面浏览位置具有记忆性
+    - 体验良好的组件切换动画效果
 
-## Project Setup
+- 逻辑复用：
 
-```sh
-npm install
-```
+    - 可复用组件：基于单漫画组件novelItem，封装了hotNovelItem、novelList3高度复用。以及分区块组件封装，快速搭建页面整体。
+    - 自定义hook：实时记录用户的页面滚动距离，返回响应式数据。
 
-### Compile and Hot-Reload for Development
+- 性能优化：
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+    - 全局使用路由懒加载
+    - 使用Vuex + persistedState插件缓存服务端数据
+    - keepAlive缓存组件
+    - 分页异步请求数据与渲染
