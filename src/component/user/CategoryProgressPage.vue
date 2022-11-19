@@ -30,7 +30,7 @@ export default {
 
     .catalog-item {
         display: inline-block;
-        width: 46vw;
+        width: 45vw;
         height: 26vw;
         opacity: 1;
         background-size: contain;
