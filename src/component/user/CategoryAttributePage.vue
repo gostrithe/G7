@@ -23,26 +23,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/variable.scss";
 .clearfix {
     width: 100%;
     height: 100%;
 
     .catalog-item {
-        display: inline-block;
-        width: 46vw;
-        height: 26vw;
-        opacity: 1;
-        background-size: contain;
-        background-repeat: no-repeat;
-        list-style: none;
-        margin: 2vw 2vw;
-        padding: 0;
+        @include  catalog-item;
 
         // overflow:hidden;  
         a {
-            display: block;
-            width: 46vw;
-            height: 26vw;
+            @include Aattribute;
 
         }
     }
