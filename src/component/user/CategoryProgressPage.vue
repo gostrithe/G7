@@ -19,7 +19,6 @@ export default {
         }
     },
     mounted() {
-        console.log('我是进度');
     },
 }
 </script>

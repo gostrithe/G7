@@ -220,7 +220,8 @@ const provideValue = ref(null);
 provide('chapterTitle', provideValue);
 provide('listIndex', indexNum);
 const onChapterClick = (id, chapter, i) => {
-    router.push(`/${id}/${chapter}`);
+    // router.push(`/${id}/${chapter}`);
+    router.replace(`/${id}/${chapter}`);
     indexNum.value = i;
     provideValue.value = list.value[i].title;
 }

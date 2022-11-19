@@ -1,6 +1,6 @@
 <template>
     <div>
-        <van-nav-bar :class="{ myheadernavbar:myheadernavbar }" class="myheadernavbar_fixed" fixed="true"
+        <van-nav-bar :class="{ myheadernavbar:myheadernavbar }" class="myheadernavbar_fixed" :fixed="true"
             :title="title" :left-text="leftText" left-arrow @click-left="onClickLeft">
             <template #title>
                 <span class="title">{{ title }}</span>
@@ -38,7 +38,10 @@ export default {
         }
     },
     setup() {
-        const onClickLeft = () => history.back();
+        const onClickLeft = () => {
+
+            history.back();
+        }
         return {
             onClickLeft,
         };

@@ -124,7 +124,7 @@ const backToNovelDetail = () => {
     document.body.scrollTop = props.sT;
     window.pageYOffset = props.sT;
 
-    router.push(`/${route.params.id}`);
+    router.replace(`/${route.params.id}`);
 };
 
 const onNextClick = () => {

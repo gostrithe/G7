@@ -1,13 +1,14 @@
 <template>
-    <div class="login-header-wrapper">
-        <!-- <div class="login-header">
+    <div>
+        <div class="login-header-wrapper">
+            <!-- <div class="login-header">
             <a class="header-back" href="javascript:history.back()"></a>
             <a class="header-forgot">忘记密码</a>
         </div> -->
-        <MyHeaderNavBar left-text="忘记密码" />
-        <div class="login-header-logo"></div>
-    </div>
-    <!-- <div class="form-forgot" id="findPasswordForm" action="" name="login" method="POST">
+            <MyHeaderNavBar left-text="忘记密码" />
+            <div class="login-header-logo"></div>
+        </div>
+        <!-- <div class="form-forgot" id="findPasswordForm" action="" name="login" method="POST">
         <div class="phone-input">
             <span class="phone86">+86</span>
             <input class="input" id="phoneInput" type="text" name="phone" placeholder="请输入手机号" maxlength="11">
@@ -21,18 +22,19 @@
         </div>
     </div>
     <button class="finish-button">完成</button> -->
-    <MyLoginPage buttonconten="完成"/>
+        <MyLoginPage buttonconten="完成" />
+    </div>
 </template>
 
 <script>
-import MyHeaderNavBar from "@common/MyHeaderNavBar.vue"
-import MyLoginPage from "@common/MyLoginPage.vue"
+import MyHeaderNavBar from "@common/MyHeaderNavBar.vue";
+import MyLoginPage from "@common/MyLoginPage.vue";
 export default {
     components: {
         MyHeaderNavBar,
         MyLoginPage
     }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -67,6 +69,4 @@ export default {
         }
     }
 }
-
-
 </style>

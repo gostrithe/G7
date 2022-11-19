@@ -14,7 +14,8 @@ export default function () {
             /* 发现在安卓失效了 */
             // scrollY.value = window.scrollY;
             /* 兼容一下 */
-            scrollY.value = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
+            var a = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
+            scrollY.value = a;
         }
     };
 

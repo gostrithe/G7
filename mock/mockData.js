@@ -5,6 +5,10 @@ const novelContentData = require('./data/novelContentData.json');
 const myHomeData = require('./data/myHomeData.json');
 const assortImgData=require('./data/assortImgData.json')
 const theme_1data = require('./data/theme_1data.json')
+const theme_1dataPage2 = require('./data/theme_1dataPage2.json')
+
+
+
 const progress_1data = require('./data/progress_1data.json')
 const masses_1data = require('./data/masses_1data.json')
 const attribute_1data = require('./data/attribute_1data.json')
@@ -17,6 +21,9 @@ module.exports = () => {
         myHomeData,
         // assortImgData
         theme_1data,
+        theme_1dataPage2,
+
+
         progress_1data,
         masses_1data,
         attribute_1data
