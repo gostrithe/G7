@@ -32,7 +32,7 @@
 
 
 ## 效果图
-![](img/1676460910205.jpg)
+![](https://raw.githubusercontent.com/gostrithe/G7/main/img/1676460910205.jpg)
 ![](img/1676460990941.jpg)
 ![](img/1676461016863.jpg)
 ![](img/1676461054748.jpg)
