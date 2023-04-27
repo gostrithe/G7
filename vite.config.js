@@ -12,5 +12,9 @@ export default defineConfig({
       '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       '@common': fileURLToPath(new URL('./src/component/common', import.meta.url)),
     }
+  },
+  base: '/G7',
+  build: {
+    outDir: 'docs'
   }
 })
