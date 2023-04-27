@@ -16,5 +16,6 @@ export default defineConfig({
   base: '/G7/',
   build: {
     outDir: 'docs'
-  }
+  },
+  publicDir: 'public'
 })
