@@ -13,7 +13,7 @@ export default defineConfig({
       '@common': fileURLToPath(new URL('./src/component/common', import.meta.url)),
     }
   },
-  base: '/G7',
+  base: '/G7/',
   build: {
     outDir: 'docs'
   }
