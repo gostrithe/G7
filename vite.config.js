@@ -11,11 +11,13 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       '@common': fileURLToPath(new URL('./src/component/common', import.meta.url)),
+      '/imgs': "./src/imgs"
     }
   },
   base: '/G7/',
+  // base: './',
   build: {
     outDir: 'docs'
   },
-  publicDir: 'public'
+  publicDir: 'false'
 })
