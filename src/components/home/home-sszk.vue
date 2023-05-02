@@ -1,7 +1,7 @@
 <template>
     <div v-if="sszkNovels.topTwo" class="sszk">
         <div class="titleBox">
-            <van-cell class="title" title="上升最快" icon="/imgs/ic_home_ss.png" is-link value="更多" />
+            <van-cell class="title" title="上升最快" icon="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_home_ss.png" is-link value="更多" />
         </div>
 
         <div v-for="novel in sszkNovels.topTwo" :key="novel.id" @click="onClickHandler(novel.id)">

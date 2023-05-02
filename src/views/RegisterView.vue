@@ -54,7 +54,7 @@ export default {
             height: 4vw;
             margin-left: 4vw;
             margin-top: 4vw;
-            background: url('/imgs/ic_nav_return_login@2x.png') no-repeat center center;
+            background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_nav_return_login@2x.png') no-repeat center center;
             background-size: cover;
         }
 

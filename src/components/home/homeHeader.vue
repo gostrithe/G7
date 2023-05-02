@@ -11,13 +11,13 @@
         <div class="underBanner">
             <van-grid :border="false"  gutter="0" :center="false">
                 <van-grid-item to="/update/">
-                    <van-image src="/imgs/home_gx.png" />
+                    <van-image src="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/home_gx.png" />
                 </van-grid-item>
                 <van-grid-item to="/popularity/">
-                    <van-image src="/imgs/home_ph.png" />
+                    <van-image src="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/home_ph.png" />
                 </van-grid-item>
                 <van-grid-item url="https://m.xiaoshuohui.com.cn/">
-                    <van-image src="/imgs/home_xs.png" />
+                    <van-image src="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/home_xs.png" />
                 </van-grid-item>
             </van-grid>
         </div>
@@ -44,7 +44,7 @@ export default {
     top: 0;
     width: 31px;
     height: 31px;
-    background: url('/imgs/ic_home_search.png') transparent center no-repeat;
+    background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_home_search.png') transparent center no-repeat;
     background-size: contain;
     border: none;
     transform: translate(-50%, 50%);

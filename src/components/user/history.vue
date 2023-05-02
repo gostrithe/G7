@@ -28,7 +28,7 @@ export default {
     color: #2b0e0e;
     line-height: 12vw;
     background-color: #F7F6F6;
-    background-image: url(/imgs/pic_sj_qdl@2x.png);
+    background-image: url(https://raw.githubusercontent.com/gostrithe/G7/main/imgs/pic_sj_qdl@2x.png);
     background-repeat: no-repeat;
     background-size: 9vw;
     background-position: 4vw 1vw;

@@ -5,8 +5,8 @@
             <div class="navBar">
                 <van-nav-bar :title="title" left-arrow @click-left="onClickLeft" :border="false">
                     <template #right>
-                        <van-icon @click="showShadow" name="/imgs/ic_nav_share.png" size="21" />
-                        <van-icon @click="goHome" name="/imgs/ic_nav_gohome.png" size="21" />
+                        <van-icon @click="showShadow" name="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_nav_share.png" size="21" />
+                        <van-icon @click="goHome" name="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_nav_gohome.png" size="21" />
                     </template>
                 </van-nav-bar>
             </div>
@@ -22,14 +22,14 @@
                     </div>
                 </div>
                 <div class="shadow">
-                    <img class="bg1" src="/imgs/bg_detail_bannerbg.png">
-                    <img class="bg2" src="/imgs/bg_banner.png">
+                    <img class="bg1" src="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/bg_detail_bannerbg.png">
+                    <img class="bg2" src="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/bg_banner.png">
                 </div>
             </div>
 
             <div class="beginAndContinute">
                 <van-action-bar>
-                    <van-action-bar-icon icon="/imgs/ic_detail_coll_off.png" :text="`收藏(${colletionCount})`" />
+                    <van-action-bar-icon icon="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_detail_coll_off.png" :text="`收藏(${colletionCount})`" />
                     <van-action-bar-button type="danger" text="开始阅读" @click="onClickButton" />
                 </van-action-bar>
             </div>
@@ -404,17 +404,17 @@ const onChapterClick = (id, chapter, i) => {
     }
 
     .yp {
-        background: url('/imgs/ic_detail_tab_yp.png');
+        background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_detail_tab_yp.png');
         background-size: contain;
     }
 
     .ds {
-        background: url('/imgs/ic_detail_tab_ds.png');
+        background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_detail_tab_ds.png');
         background-size: contain;
     }
 
     .share {
-        background: url('/imgs/ic_detail_tab_fx.png');
+        background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_detail_tab_fx.png');
         background-size: contain;
     }
 }
@@ -449,7 +449,7 @@ const onChapterClick = (id, chapter, i) => {
         .iconSort {
             width: 14px;
             height: 14px;
-            background: url('/imgs/ic_detail_zjsx.png');
+            background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_detail_zjsx.png');
             background-size: contain;
             margin-right: 3px;
         }
@@ -524,15 +524,15 @@ const onChapterClick = (id, chapter, i) => {
                 }
 
                 .shareQQ {
-                    background: url('/imgs/icon_qq.png');
+                    background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/icon_qq.png');
                 }
 
                 .shareQzone {
-                    background: url('/imgs/icon_qqzone.png');
+                    background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/icon_qqzone.png');
                 }
 
                 .shareWB {
-                    background: url('/imgs/icon_xl.png');
+                    background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/icon_xl.png');
                 }
             }
         }

@@ -65,7 +65,7 @@ export default {
         height: 7vw;
         margin-top: 3vw;
         margin-right: 3vw;
-        background-image: url('/imgs/ic_list_arrange@2x.png');
+        background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_list_arrange@2x.png');
         background-size: cover;
     }
 }

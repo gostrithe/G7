@@ -23,7 +23,7 @@ export default {
         height: 36vw;
         margin-top: 20vw;
         margin: 0 auto;
-        background-image: url('/imgs/pic_default_colllogin@2x.png');
+        background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/pic_default_colllogin@2x.png');
         background-size: cover;
     }
 

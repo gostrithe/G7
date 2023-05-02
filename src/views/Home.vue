@@ -10,7 +10,7 @@
             <van-divider :style="{ borderColor: '#bbb', margin: '6px -12px' }" />
 
             <mainContent :djzpNovels="djzpNovels">
-                <van-cell class="title" title="独家作品" icon="/imgs/ic_home_dj.png" is-link value="更多" />
+                <van-cell class="title" title="独家作品" icon="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_home_dj.png" is-link value="更多" />
             </mainContent>
 
             <homeSszk :sszkNovels="sszkNovels"></homeSszk>
@@ -21,7 +21,7 @@
 
 
         <footer>
-            <van-image width="40" height="52" src="/imgs/pic_home_footimg.png" />
+            <van-image width="40" height="52" src="https://raw.githubusercontent.com/gostrithe/G7/main/imgs/pic_home_footimg.png" />
         </footer>
 
     </div>

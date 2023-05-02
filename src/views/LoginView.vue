@@ -103,7 +103,7 @@ export default {
             height: 4vw;
             margin-left: 4vw;
             margin-top: 4vw;
-            background: url('/imgs/ic_nav_return_login@2x.png') no-repeat center center;
+            background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_nav_return_login@2x.png') no-repeat center center;
             background-size: cover;
         }
 
@@ -123,7 +123,7 @@ export default {
         width: 28vw;
         height: 18vw;
         margin: 10vw auto;
-        background: url('/imgs/pic_login_logo@2x.png') no-repeat center center;
+        background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/pic_login_logo@2x.png') no-repeat center center;
         background-size: cover;
     }
 }
@@ -145,7 +145,7 @@ export default {
         color: #999;
         line-height: 10vw;
         text-align: center;
-        background-image: url('/imgs/bg_login_qtfsdl@2x.png');
+        background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/bg_login_qtfsdl@2x.png');
         background-size: cover;
     }
 
@@ -155,7 +155,7 @@ export default {
 
         .login-fn-qq {
             display: block;
-            background-image: url('/imgs/ic_login_qq@2x.png');
+            background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_login_qq@2x.png');
             width: 12vw;
             height: 16vw;
             padding-top: 10vw;
@@ -169,7 +169,7 @@ export default {
 
         .login-fn-weibo {
 
-            background-image: url('/imgs/ic_login_wb@2x.png');
+            background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_login_wb@2x.png');
             width: 12vw;
 
             height: 16vw;

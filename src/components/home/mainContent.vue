@@ -45,7 +45,7 @@ export default {
     margin: 16px 0 26px;
     height: 131px;
     // padding-bottom: 15px;
-    // background: url('/imgs/bg_gg_bg.png');
+    // background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/bg_gg_bg.png');
     box-shadow: 7px 5px 5px rgba(0, 0, 0, .3);
 }
 </style>

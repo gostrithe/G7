@@ -183,15 +183,15 @@ img {
         }
 
         .pre {
-            background-image: url('/imgs/ic_readpage_up.png');
+            background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_readpage_up.png');
         }
 
         .back {
-            background-image: url('/imgs/ic_readpage_back.png');
+            background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_readpage_back.png');
         }
 
         .next {
-            background-image: url('/imgs/ic_readpage_down.png');
+            background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_readpage_down.png');
         }
     }
 }

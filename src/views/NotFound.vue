@@ -20,7 +20,7 @@ export default {
     width: 70vw;
     height: 56vw;
     margin: 18vw auto;
-    background: url('/imgs/bg_me_top_404.png');
+    background: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/bg_me_top_404.png');
     background-size: cover;
   }
   .error-btn {

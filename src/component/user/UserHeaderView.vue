@@ -2,7 +2,7 @@
     <div class="mine-header">
         <div class="mine-header-avatar">
             <a href="#">
-                <img src='/imgs/pic_user_wdl.png' alt="默认头像">
+                <img src='https://raw.githubusercontent.com/gostrithe/G7/main/imgs/pic_user_wdl.png' alt="默认头像">
             </a>
         </div>
         <div class="mine-header-text">

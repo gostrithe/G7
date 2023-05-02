@@ -110,7 +110,7 @@ export default {
     top: 2vw;
     width: 7vw;
     height: 7vw;
-    background-image: url('/imgs/ic_nav_search_b@2x.png');
+    background-image: url('https://raw.githubusercontent.com/gostrithe/G7/main/imgs/ic_nav_search_b@2x.png');
     background-size: cover;
     background-color: white;
 }
