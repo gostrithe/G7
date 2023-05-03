@@ -1,7 +1,9 @@
 import { doGet } from './crud';
 
 export async function getData() {
-    return await doGet('/myHomeData');
+    // 获取首页数据
+    // return await doGet('/myHomeData');
+    return await doGet('http://localhost:3000/homeData')
 }
 
 export async function getNovelDetail(id) {

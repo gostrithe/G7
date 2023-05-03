@@ -20,6 +20,8 @@ const store = createStore({
     actions: {
         async fetchData({ commit }) {
             const { data } = await getData();
+            console.log('获取首页数据=======', data);
+            
             commit('addHomeData', data);
         }
     },
